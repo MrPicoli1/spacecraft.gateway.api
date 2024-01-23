@@ -1,0 +1,6 @@
+@Spaceship.Gateway.API_HostAddress = http://localhost:5062
+
+GET {{Spaceship.Gateway.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

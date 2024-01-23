@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.API", "Spaceship.Gateway.API\Spaceship.Gateway.API.csproj", "{2E5574B3-B96C-4558-9966-D86CD0253061}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{AB3989A6-175A-45A8-A2E1-D2EA6AB3568F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Data", "2 - Data", "{8B58F20E-8BF8-4557-9D0C-B99809FE83F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{84EB81BC-AB24-482E-A96A-330C923F1DD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Services", "4 - Services", "{62418B85-F297-48E9-9122-8A9831681120}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Security", "5 - Security", "{450AF675-CFCA-4D24-B859-71B7A4EFDD26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Extensions", "6 - Extensions", "{D5FAD9CC-D9DF-4D62-86C4-B9BACCC96D57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - Models", "7 - Models", "{160D9276-BC99-45CF-9672-6B1724352C0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8 - Shared", "8 - Shared", "{F844F0BC-AE08-43B8-9436-622BC6F1DCCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Data", "Spaceship.Gateway.Data\Spaceship.Gateway.Data.csproj", "{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Domain", "Spaceship.Gateway.Domain\Spaceship.Gateway.Domain.csproj", "{5964FD22-5DCA-4323-8C38-D1DB79A512D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Services", "Spaceship.Gateway.Services\Spaceship.Gateway.Services.csproj", "{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Security", "Spaceship.Gateway.Security\Spaceship.Gateway.Security.csproj", "{886017A4-AFC3-4C36-9DAA-679223490224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Extensions", "Spaceship.Gateway.Extensions\Spaceship.Gateway.Extensions.csproj", "{795C91BF-F7D1-4366-946D-679B940ED5F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Models", "Spaceship.Gateway.Models\Spaceship.Gateway.Models.csproj", "{5B9B8C2B-266D-4BA6-A86A-100F19A80684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Gateway.Shared", "Spaceship.Gateway.Shared\Spaceship.Gateway.Shared.csproj", "{39BDDE85-67A3-4130-89A7-D6544C24B353}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E5574B3-B96C-4558-9966-D86CD0253061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5574B3-B96C-4558-9966-D86CD0253061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5574B3-B96C-4558-9966-D86CD0253061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5574B3-B96C-4558-9966-D86CD0253061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5964FD22-5DCA-4323-8C38-D1DB79A512D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5964FD22-5DCA-4323-8C38-D1DB79A512D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5964FD22-5DCA-4323-8C38-D1DB79A512D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5964FD22-5DCA-4323-8C38-D1DB79A512D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886017A4-AFC3-4C36-9DAA-679223490224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886017A4-AFC3-4C36-9DAA-679223490224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886017A4-AFC3-4C36-9DAA-679223490224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886017A4-AFC3-4C36-9DAA-679223490224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795C91BF-F7D1-4366-946D-679B940ED5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795C91BF-F7D1-4366-946D-679B940ED5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795C91BF-F7D1-4366-946D-679B940ED5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795C91BF-F7D1-4366-946D-679B940ED5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B9B8C2B-266D-4BA6-A86A-100F19A80684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B9B8C2B-266D-4BA6-A86A-100F19A80684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B9B8C2B-266D-4BA6-A86A-100F19A80684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B9B8C2B-266D-4BA6-A86A-100F19A80684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BDDE85-67A3-4130-89A7-D6544C24B353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BDDE85-67A3-4130-89A7-D6544C24B353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BDDE85-67A3-4130-89A7-D6544C24B353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BDDE85-67A3-4130-89A7-D6544C24B353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E5574B3-B96C-4558-9966-D86CD0253061} = {AB3989A6-175A-45A8-A2E1-D2EA6AB3568F}
+		{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B} = {8B58F20E-8BF8-4557-9D0C-B99809FE83F3}
+		{5964FD22-5DCA-4323-8C38-D1DB79A512D1} = {84EB81BC-AB24-482E-A96A-330C923F1DD8}
+		{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A} = {62418B85-F297-48E9-9122-8A9831681120}
+		{886017A4-AFC3-4C36-9DAA-679223490224} = {450AF675-CFCA-4D24-B859-71B7A4EFDD26}
+		{795C91BF-F7D1-4366-946D-679B940ED5F1} = {D5FAD9CC-D9DF-4D62-86C4-B9BACCC96D57}
+		{5B9B8C2B-266D-4BA6-A86A-100F19A80684} = {160D9276-BC99-45CF-9672-6B1724352C0E}
+		{39BDDE85-67A3-4130-89A7-D6544C24B353} = {F844F0BC-AE08-43B8-9436-622BC6F1DCCF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {679C8B18-F6E7-4A30-81AB-1D35F9ABB2CA}
+	EndGlobalSection
+EndGlobal
