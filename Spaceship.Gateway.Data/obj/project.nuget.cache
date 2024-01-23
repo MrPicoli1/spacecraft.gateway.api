@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ERuRoq79z2SlfXy1DQ2WkqXMCcX7uXmkrZgWYCHQuZd08hF5xrmwvRBb5AS/9XtpYWv8nPYpMSpB7U9nT28FUA==",
+  "dgSpecHash": "WrMemgG/unWmPBOZ+AkXSoqnEN2mQjNAmoxgXR+JdMjdcjWlAGD4XvEfHM1jnlzsLDsB5t1CRQx+rETK5ssIDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guilherme\\source\\repos\\api\\Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj",
+  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

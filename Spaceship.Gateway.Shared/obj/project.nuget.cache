@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/d1vpVXmx5LR0ZEVC+W4CB+XfYs3YlJYsFDkkOJVeHzlwgA5cQ3mIqNBfwK9Cv/RenRE7xlAN0a9VPRNUj5PUw==",
+  "dgSpecHash": "yAKiGFcJqQqRqvNlWhKB6P0z5OA1Ha+Egx6hzILWKcuRJbpLyArqOIzmRHWcPLKLpmn0lJGEkbpMaE2eMF14Ug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guilherme\\source\\repos\\api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

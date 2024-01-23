@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Crzv4pALECFR5qbF7xixxrZfV9r6sHMiahFlfBCzSxmv0rjQeHZ473LR22t+VO1idoMFz9W8Q8ydoPsyowvqfw==",
+  "dgSpecHash": "dkr8Q/XfWwZXxv8fxZ6RnqOfjsbFb9LKVPa7O25FdFmV+EUteFPThFW/7t7R34+t5aue/947uSedKZ8FEM4MPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guilherme\\source\\repos\\api\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj",
+  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.15\\microsoft.entityframeworkcore.7.0.15.nupkg.sha512",
