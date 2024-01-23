@@ -1,1 +1,1 @@
-# spacecraft.gateway.api
+# spaceship.gateway.api
