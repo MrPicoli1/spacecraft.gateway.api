@@ -17,5 +17,7 @@ namespace Spaceship.Gateway.Domain.Entities
         public Email Email { get; private set; }
         public Address Address { get; private set; }
         public Material Material { get; private set; }
+
+        public List<Spaceship>? Spaceships { get; private set; }
     }
 }

@@ -7,14 +7,14 @@ namespace Spaceship.Gateway.Shared.Entities
 
       public Entity() 
         { 
-            Guid = Guid.NewGuid();
+            Id = Guid.NewGuid();
             CreatedDate = DateTime.Now;
             UpdatedDate = DateTime.Now;
             Deleted = false;
         }
 
 
-        public Guid Guid { get; private set; }
+        public Guid Id { get; private set; }
 
         public DateTime CreatedDate { get; private set; }
         public DateTime? DeletedDate { get; private set; }
