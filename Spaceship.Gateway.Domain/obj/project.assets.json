@@ -441,6 +441,21 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "Spaceship.Gateway.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Flunt": "2.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.15",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Spaceship.Gateway.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Spaceship.Gateway.Shared.dll": {}
+        }
       }
     }
   },
@@ -1178,6 +1193,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Spaceship.Gateway.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Spaceship.Gateway.Shared/Spaceship.Gateway.Shared.csproj",
+      "msbuildProject": "../Spaceship.Gateway.Shared/Spaceship.Gateway.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1188,7 +1208,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.15",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
+      "Spaceship.Gateway.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1223,7 +1244,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj": {
+              "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

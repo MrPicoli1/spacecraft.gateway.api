@@ -834,7 +834,8 @@
           "Flunt": "2.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.15",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
+          "Spaceship.Gateway.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Spaceship.Gateway.Domain.dll": {}

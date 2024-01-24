@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Spaceship.Gateway.Shared.ValueObject;
 
 namespace Spaceship.Gateway.Domain.ValueObjects
 {
-    internal class Email
+    public class Email : ValueObject
     {
+        public string Address { get; private set; }
     }
 }
