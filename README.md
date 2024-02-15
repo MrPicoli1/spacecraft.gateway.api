@@ -1,8 +1,8 @@
-#Spaceship idle browser game
+# Spaceship idle browser game
 
 This web game project to apply my knoledge in .Net 8
 
-##Goals
+## Goals
 
 Create a Gateway API
 Apply the Domain Driven Desing
