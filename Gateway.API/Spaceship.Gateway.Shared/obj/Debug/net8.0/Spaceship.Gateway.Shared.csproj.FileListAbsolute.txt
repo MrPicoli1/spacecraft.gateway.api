@@ -1,0 +1,15 @@
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\bin\Debug\net8.0\Spaceship.Gateway.Shared.deps.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\bin\Debug\net8.0\Spaceship.Gateway.Shared.runtimeconfig.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\bin\Debug\net8.0\Spaceship.Gateway.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\bin\Debug\net8.0\Spaceship.Gateway.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.sourcelink.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\refint\Spaceship.Gateway.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\Spaceship.Gateway.Shared.genruntimeconfig.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Shared\obj\Debug\net8.0\ref\Spaceship.Gateway.Shared.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj": {}
+    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj": {
+    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj",
         "projectName": "Spaceship.Gateway.Security",
-        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj",
+        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Security\\Spaceship.Gateway.Security.csproj",
         "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Security\\obj\\",
+        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

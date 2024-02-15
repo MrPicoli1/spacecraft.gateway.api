@@ -5,20 +5,23 @@ namespace Spaceship.Gateway.Domain.Entities
 {
     public class Spaceship : Entity
     {
-        public Spaceship(HitPoints hitPoints, int damage, int rank, bool idle, Guid userId, User user)
+        public Spaceship(Status status,
+                         bool idle,
+                         Guid userId,
+                         User user,
+                         Material baseRankUpMaterial)
         {
-            HitPoints = hitPoints;
-            Damage = damage;
-            Rank = rank;
             Idle = idle;
             UserId = userId;
             User = user;
+            Status = status;
+            BaseRankUpMaterial = baseRankUpMaterial;
         }
 
-        public HitPoints HitPoints { get; private set; }
-        public int Damage { get; private set; }
-        public int Rank { get; private set; }
+        public Status Status { get; private set; }
+        public Material BaseRankUpMaterial { get; private set; }
         public bool Idle { get; private set; }
+        public DateTime? MissionEnd { get; private set; }
 
         public Guid UserId { get; private set; }
 

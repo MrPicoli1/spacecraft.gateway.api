@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj": {}
+    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj": {
+    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj",
         "projectName": "Spaceship.Gateway.Domain",
-        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj",
+        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj",
         "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj": {
-                "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj"
+              "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj": {
+                "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj"
               }
             }
           }
@@ -100,14 +100,14 @@
         }
       }
     },
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj": {
+    "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
         "projectName": "Spaceship.Gateway.Shared",
-        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
+        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
         "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

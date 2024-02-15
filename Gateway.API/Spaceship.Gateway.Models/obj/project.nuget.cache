@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rSfcD96WWI0POKfWo579+vJvmVGCc0rqAovkdWiA//zwVhFa7CLJi67GaEOXA7mjSinOFcGFUYSkDoZ7JiIFXg==",
+  "dgSpecHash": "Vi/3CMZfSWUtspd652VbNYGdUzHdA+KmbOm6oVsAiLm4wLYWRhCFbTtGl3bRccncC9C1zuqXHG/Aj/7v6AI8Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj",
+  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

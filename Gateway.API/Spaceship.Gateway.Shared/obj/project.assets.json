@@ -985,11 +985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
       "projectName": "Spaceship.Gateway.Shared",
-      "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
+      "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj",
       "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.gateway.api\\Spaceship.Gateway.Shared\\obj\\",
+      "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
