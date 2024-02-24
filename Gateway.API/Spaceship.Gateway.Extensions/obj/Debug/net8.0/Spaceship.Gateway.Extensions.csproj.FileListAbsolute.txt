@@ -1,0 +1,15 @@
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\bin\Debug\net8.0\Spaceship.Gateway.Extensions.deps.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\bin\Debug\net8.0\Spaceship.Gateway.Extensions.runtimeconfig.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\bin\Debug\net8.0\Spaceship.Gateway.Extensions.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\bin\Debug\net8.0\Spaceship.Gateway.Extensions.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.sourcelink.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\refint\Spaceship.Gateway.Extensions.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\Spaceship.Gateway.Extensions.genruntimeconfig.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Extensions\obj\Debug\net8.0\ref\Spaceship.Gateway.Extensions.dll

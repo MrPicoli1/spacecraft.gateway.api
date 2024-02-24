@@ -20,7 +20,7 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 
-builder.Services.AddDbContext<SpaceshipMySQLContext>(opts => opts.UseMySql("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;", ServerVersion.AutoDetect("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;")));
+//builder.Services.AddDbContext<SpaceshipMySQLContext>(opts => opts.UseMySql("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;", ServerVersion.AutoDetect("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;")));
 // Configure the HTTP request pipeline.
 
 app.UseSwagger();

@@ -1,0 +1,15 @@
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Data.deps.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Data.runtimeconfig.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Data.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Data.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.sourcelink.json
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\refint\Spaceship.Gateway.Data.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.genruntimeconfig.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\ref\Spaceship.Gateway.Data.dll

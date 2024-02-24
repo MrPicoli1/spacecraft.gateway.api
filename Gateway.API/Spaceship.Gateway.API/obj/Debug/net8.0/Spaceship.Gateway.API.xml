@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Spaceship.Gateway.API</name>
+    </assembly>
+    <members>
+        <member name="M:Spaceship.Gateway.API.Controllers.MissionController.GetMission">
+            <summary>
+            Get a List of Missions
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="200">If the update occurred</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.MissionController.EndMission(System.Guid)">
+            <summary>
+            Finish a Mission of a Spaceship
+            </summary>
+            <param name="id">Object for the Update of a User</param>
+            <returns>IActionResult</returns>
+            <response code="204">If the update occurred</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.CreateSpaceship(Spaceship.Gateway.Models.Spaceship.SpaceshipModel)">
+            <summary>
+            Add a new Spaceship
+            </summary>
+            <param name="model">Object for the creation of a Spaceship</param>
+            <returns>IActionResult</returns>
+            <response code="201">If the Spaceship is created</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.GetNewSpaceships">
+            <summary>
+            Return a list of Spaceships
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="200">If it successifully gets an list of spaceships</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.RankUp(System.Guid)">
+            <summary>
+            Adds 1 to the spaceship rank
+            </summary>
+            <param name="id">Id of the desired spaceship</param>
+            <returns>IActionResult</returns>
+            <response code="204">If the rank up occurred</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.Repair(System.Guid)">
+            <summary>
+            Repais the Spaceship
+            </summary>
+            <param name="id">Id of the desired spaceship</param>
+            <returns>IActionResult</returns>
+            <response code="204">If the repair occurred</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.SendOnMission(System.Guid,Spaceship.Gateway.Models.Mission.MissionModel)">
+            <summary>
+            Send on a Mission
+            </summary>
+            <param name="id">Id of the desired spaceship</param>
+            // <param name="model">Object representing a Mission</param>
+            <returns>IActionResult</returns>
+            <response code="204">If the the spaceShip is sent on a mission</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.DeleteSpaceship(System.Guid)">
+            <summary>
+            Delete a Sepaceship
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="204">If the Spaceship is deleted</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.UserController.PostUser(Spaceship.Gateway.Models.User.UserModel)">
+            <summary>
+            Add a User
+            </summary>
+            <param name="model">Object for the creation of a User</param>
+            <returns>IActionResult</returns>
+            <response code="201">If the user is created</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.UserController.PutUser(Spaceship.Gateway.Models.User.UserModel)">
+            <summary>
+            Update a User
+            </summary>
+            <param name="model">Object for the Update of a User</param>
+            <returns>IActionResult</returns>
+            <response code="204">If the update occurred</response>
+        </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.UserController.DeleteUser(Spaceship.Gateway.Models.User.UserModel)">
+            <summary>
+            Delete User
+            </summary>
+            <param ></param>
+            <returns>IActionResult</returns>
+            <response code="204">If the user is deleted</response>
+        </member>
+    </members>
+</doc>
