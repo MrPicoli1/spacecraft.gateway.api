@@ -1,12 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Spaceship.Gateway.Models.User;
+using Spaceship.Gateway.Services.Interfaces;
 
 namespace Spaceship.Gateway.API.Controllers
 {
+
+    
+
     [ApiController]
     [Route("api/v1/gateway/user")]
     public class UserController : Controller
     {
+        
+        
+        private readonly IUserService _userService;
+
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+
+
+
         /// <summary>
         /// Add a User
         /// </summary>
@@ -18,7 +34,9 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> PostUser([FromBody] UserModel model)
         {
 
-            return Created();
+            
+
+            return Ok(_userService.AddUser(model));
         }
 
         /// <summary>
@@ -42,9 +60,9 @@ namespace Spaceship.Gateway.API.Controllers
         /// <param ></param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the user is deleted</response>
-        [HttpDelete]
+        [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> DeleteUser([FromBody] UserModel model)
+        public async Task<IActionResult> DeleteUser([FromRoute] Guid id)
         {
 
             return NoContent();

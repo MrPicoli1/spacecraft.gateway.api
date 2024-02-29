@@ -13,3 +13,14 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\obj\Debug\net8.0\Spaceship.Gateway.Services.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\obj\Debug\net8.0\Spaceship.Gateway.Services.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\obj\Debug\net8.0\ref\Spaceship.Gateway.Services.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Data.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Domain.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Models.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Security.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Data.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Domain.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Models.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Security.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\obj\Debug\net8.0\Spaceship.Gateway.Services.csproj.CopyComplete

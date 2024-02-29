@@ -14,7 +14,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.15",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Spaceship.Gateway.Domain": "1.0.0"
+          "Spaceship.Gateway.Shared": "1.0.0"
         },
         "runtime": {
           "Spaceship.Gateway.Models.dll": {}
@@ -236,26 +236,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.2.5.0"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.15",
-          "MySqlConnector": "2.2.5"
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.0.0"
-          }
-        }
-      },
       "System.CodeDom/4.4.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -268,20 +248,6 @@
       "System.Text.Json/7.0.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
-        }
-      },
-      "Spaceship.Gateway.Domain/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Flunt": "2.0.5",
-          "Microsoft.EntityFrameworkCore": "7.0.15",
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
-          "Spaceship.Gateway.Shared": "1.0.0"
-        },
-        "runtime": {
-          "Spaceship.Gateway.Domain.dll": {}
         }
       },
       "Spaceship.Gateway.Shared/1.0.0": {
@@ -456,20 +422,6 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
-    "MySqlConnector/2.2.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6sinY78RvryhHwpup3awdjYO7d5hhWahb5p/1VDODJhSxJggV/sBbYuKK5IQF9TuzXABiddqUbmRfM884tqA3Q==",
-      "path": "mysqlconnector/2.2.5",
-      "hashPath": "mysqlconnector.2.2.5.nupkg.sha512"
-    },
-    "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Qk5WB/skSZet5Yrz6AN2ywjZaB1pxfAmvQ+5I4khTkLwwIamI4QJoH2NphCWLFQL+2ar8HvsNCTmwYk0qhqL0w==",
-      "path": "pomelo.entityframeworkcore.mysql/7.0.0",
-      "hashPath": "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512"
-    },
     "System.CodeDom/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -490,11 +442,6 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
-    },
-    "Spaceship.Gateway.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Spaceship.Gateway.Shared/1.0.0": {
       "type": "project",

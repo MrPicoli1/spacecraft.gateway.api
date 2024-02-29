@@ -16,3 +16,5 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Domain\obj\Debug\net8.0\Spaceship.Gateway.Domain.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Domain\obj\Debug\net8.0\Spaceship.Gateway.Domain.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Domain\obj\Debug\net8.0\ref\Spaceship.Gateway.Domain.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Domain\bin\Debug\net8.0\Spaceship.Gateway.Models.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Domain\bin\Debug\net8.0\Spaceship.Gateway.Models.pdb

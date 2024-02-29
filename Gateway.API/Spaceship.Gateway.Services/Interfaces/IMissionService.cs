@@ -1,4 +1,4 @@
-﻿namespace Spaceship.Gateway.Services.Mission
+﻿namespace Spaceship.Gateway.Services.Interfaces
 {
     public interface IMissionService
     {

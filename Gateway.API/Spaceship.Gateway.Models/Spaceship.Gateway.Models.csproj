@@ -19,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Spaceship.Gateway.Domain\Spaceship.Gateway.Domain.csproj" />
+    <ProjectReference Include="..\Spaceship.Gateway.Shared\Spaceship.Gateway.Shared.csproj" />
   </ItemGroup>
+	
+
 
 </Project>

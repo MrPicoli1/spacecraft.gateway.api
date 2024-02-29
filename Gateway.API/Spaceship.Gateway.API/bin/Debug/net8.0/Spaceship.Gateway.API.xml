@@ -85,7 +85,7 @@
             <returns>IActionResult</returns>
             <response code="204">If the update occurred</response>
         </member>
-        <member name="M:Spaceship.Gateway.API.Controllers.UserController.DeleteUser(Spaceship.Gateway.Models.User.UserModel)">
+        <member name="M:Spaceship.Gateway.API.Controllers.UserController.DeleteUser(System.Guid)">
             <summary>
             Delete User
             </summary>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TfTh8cknYCp6r+Cv0A/zzpBXRjMbN2VDQZ/MFQWvP7FbTX54YsnbkPc5kYdkJerMluElh6774F0p0rjhNgxy6Q==",
+  "dgSpecHash": "CggCMF0X7FS49rdIqAcb3kU7mEWaZUegE3lmuxqBtL/I2rP/ps46cVBKdnptbPoYnUv21ky4AUJcwQfJ/0Qa3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj",
   "expectedPackageFiles": [
@@ -26,8 +26,6 @@
     "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
-    "C:\\Users\\Guilherme\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\Guilherme\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"

@@ -1,6 +1,7 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Spaceship.Gateway.Data.Repositories;
+using Spaceship.Gateway.Domain.Profiles;
+using Spaceship.Gateway.Services.Interfaces;
+using Spaceship.Gateway.Services.Services;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,10 +18,17 @@ builder.Services.AddSwaggerGen(c =>
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
 });
-var app = builder.Build();
+
+
+builder.Services.AddTransient<IUserService,UserService>();
+builder.Services.AddAutoMapper(typeof(SpaceshipProfiles));
 
 
 //builder.Services.AddDbContext<SpaceshipMySQLContext>(opts => opts.UseMySql("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;", ServerVersion.AutoDetect("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;")));
+
+var app = builder.Build();
+
+
 // Configure the HTTP request pipeline.
 
 app.UseSwagger();

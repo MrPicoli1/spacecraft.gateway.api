@@ -3,9 +3,9 @@ using Spaceship.Gateway.Shared.Entities;
 
 namespace Spaceship.Gateway.Domain.Entities
 {
-    public class Spaceship : Entity
+    public class Spaceships : Entity
     {
-        public Spaceship(Status status,
+        public Spaceships(Status status,
                          bool idle,
                          Guid userId,
                          User user,

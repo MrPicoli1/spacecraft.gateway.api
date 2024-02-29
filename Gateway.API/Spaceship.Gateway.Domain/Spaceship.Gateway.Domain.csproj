@@ -20,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Spaceship.Gateway.Shared\Spaceship.Gateway.Shared.csproj" />
+
+	  <ProjectReference Include="..\Spaceship.Gateway.Models\Spaceship.Gateway.Models.csproj" />
+	  <ProjectReference Include="..\Spaceship.Gateway.Shared\Spaceship.Gateway.Shared.csproj" />
   </ItemGroup>
 
 </Project>

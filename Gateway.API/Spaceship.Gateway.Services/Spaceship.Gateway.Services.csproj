@@ -22,4 +22,11 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Spaceship.Gateway.Data\Spaceship.Gateway.Data.csproj" />
+    <ProjectReference Include="..\Spaceship.Gateway.Domain\Spaceship.Gateway.Domain.csproj" />
+    <ProjectReference Include="..\Spaceship.Gateway.Models\Spaceship.Gateway.Models.csproj" />
+    <ProjectReference Include="..\Spaceship.Gateway.Security\Spaceship.Gateway.Security.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,11 +1,11 @@
-﻿using Spaceship.Gateway.Domain.ValueObjects;
+﻿using Spaceship.Gateway.Models.ValueObjects;
 
 
 namespace Spaceship.Gateway.Models.User
 {
     public class UserModel
     {
-        public UserModel(Login login, Email email, Address address, Material material)
+        public UserModel(LoginModel login, EmailModel email, AddressModel address, MaterialModel material)
         {
             Login = login;
             Email = email;
@@ -13,9 +13,9 @@ namespace Spaceship.Gateway.Models.User
             Material = material;
         }
 
-        public Login Login { get; set; }
-        public Email Email { get; set; }
-        public Address Address { get; set; }
-        public Material Material { get; set; }
+        public LoginModel Login { get; set; }
+        public EmailModel Email { get; set; }
+        public AddressModel Address { get; set; }
+        public MaterialModel Material { get; set; }
     }
 }
