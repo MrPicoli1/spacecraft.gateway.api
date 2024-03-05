@@ -26,5 +26,12 @@ namespace Spaceship.Gateway.Shared.Entities
             UpdatedDate = DateTime.Now;
         }
 
+        public void Delete()
+        {
+            Deleted = true;
+            DeletedDate = DateTime.Now;
+            UpdatedDate = DateTime.Now;
+        }
+
     }
 }

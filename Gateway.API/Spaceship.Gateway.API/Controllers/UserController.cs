@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Spaceship.Gateway.Models.User;
+using Spaceship.Gateway.Models.ValueObjects;
 using Spaceship.Gateway.Services.Interfaces;
 
 namespace Spaceship.Gateway.API.Controllers
 {
 
-    
+
 
     [ApiController]
     [Route("api/v1/gateway/user")]
     public class UserController : Controller
     {
-        
-        
+
+
         private readonly IUserService _userService;
 
         public UserController(IUserService userService)
@@ -20,7 +21,18 @@ namespace Spaceship.Gateway.API.Controllers
             _userService = userService;
         }
 
-
+        /// <summary>
+        /// Add a User
+        /// </summary>
+        /// <param name="model">Object to generate a JWT Key</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">If the login is susecceful</response>
+        [HttpPost("login")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        {
+            return Ok();
+        }
 
 
         /// <summary>
@@ -28,15 +40,20 @@ namespace Spaceship.Gateway.API.Controllers
         /// </summary>
         /// <param name="model">Object for the creation of a User</param>
         /// <returns>IActionResult</returns>
-        /// <response code="201">If the user is created</response>
+        /// <response code="200">If the user is created</response>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> PostUser([FromBody] UserModel model)
         {
 
-            
+            var user = await _userService.AddUser(model);
 
-            return Ok(_userService.AddUser(model));
+            if (user.Notifications.Any())
+            {
+                return BadRequest(user.Notifications);
+            }
+
+            return Ok();
         }
 
         /// <summary>

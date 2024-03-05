@@ -1,4 +1,5 @@
-﻿using Spaceship.Gateway.Shared.ValueObject;
+﻿using Flunt.Validations;
+using Spaceship.Gateway.Shared.ValueObject;
 
 namespace Spaceship.Gateway.Domain.ValueObjects
 {
@@ -12,6 +13,12 @@ namespace Spaceship.Gateway.Domain.ValueObjects
             City = city;
             PostalCode = postalCode;
             Country = country;
+
+            AddNotifications(new Contract<Address>()
+                .Requires()
+                .IsGreaterThan(street, 3, "Rua deve conter pelo menos 3 Caracteres")
+                .IsGreaterThan(postalCode, 7, "Codigo Postal deve conter pelo menos 8 Digitos"));
+
         }
 
         public string Street { get; private set; }

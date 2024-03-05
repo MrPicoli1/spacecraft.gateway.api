@@ -4,14 +4,17 @@ namespace Spaceship.Gateway.Domain.ValueObjects
 {
     public class Status : ValueObject
     {
-        public Status(int totalHP, int currentHP, int repairCost, int damage, int rank, int tier)
+        public Status(int totalHP, int currentHP, int damage, int rank, int tier)
         {
             TotalHP = totalHP;
             CurrentHP = currentHP;
-            RepairCost = repairCost;
             Damage = damage;
             Rank = rank;
             Tier = tier;
+
+            RepairCost = 10 * (Tier) + (Rank * (15 / 100)) + TotalHP / CurrentHP;
+            
+
         }
 
         public int TotalHP { get; private set; }
@@ -20,5 +23,11 @@ namespace Spaceship.Gateway.Domain.ValueObjects
         public int Damage { get; private set; }
         public int Rank { get; private set; }
         public int Tier { get; private set; }
+
+        public void Repair()
+        {
+            CurrentHP = TotalHP;
+        }
+
     }
 }

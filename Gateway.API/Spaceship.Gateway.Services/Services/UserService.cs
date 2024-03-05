@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Flunt.Validations;
 using Spaceship.Gateway.Domain.Entities;
 using Spaceship.Gateway.Models.User;
 using Spaceship.Gateway.Services.Interfaces;
@@ -19,14 +20,41 @@ namespace Spaceship.Gateway.Services.Services
 
         public async Task<User> AddUser(UserModel model)
         {
+
+
             var user = _mapper.Map<User>(model);
+
+            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username).;
+
+            if (exists != null)
+            {
+                user.AddNotification(user.Login.Username , "Username ja existe");
+            }
+
+            if (user.Notifications.Any())
+            {
+                return user;
+            }
+
+            _users.Add(user);
 
             return user;
         }
 
-        public Task DeleteUser(UserModel model)
+        public async Task<bool> DeleteUser(Guid Id)
         {
-            throw new NotImplementedException();
+            var exists = _users.FirstOrDefault(x => x.Id == Id);
+
+            if (exists != null)
+            {
+                return false;
+            }
+
+
+            _users.FirstOrDefault(x => x.Id == Id).Delete();
+
+
+            return true;
         }
 
         public Task<User> UpdateUser(UserModel model)

@@ -7,7 +7,7 @@ namespace Spaceship.Gateway.Services.Interfaces
     {
         Task<User> AddUser(UserModel model);
         Task<User> UpdateUser(UserModel model);
-        Task DeleteUser(UserModel model);
+        Task<bool> DeleteUser(Guid Id);
 
 
     }

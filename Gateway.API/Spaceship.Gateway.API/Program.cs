@@ -21,6 +21,8 @@ builder.Services.AddSwaggerGen(c =>
 
 
 builder.Services.AddTransient<IUserService,UserService>();
+builder.Services.AddTransient<ISpaceshipService, SpaceshipService>();
+builder.Services.AddTransient<IMissionService, MissionService>();
 builder.Services.AddAutoMapper(typeof(SpaceshipProfiles));
 
 
