@@ -18,13 +18,15 @@ namespace Spaceship.Gateway.Services.Services
             _mapper = mapper;
         }
 
+      
+
         public async Task<User> AddUser(UserModel model)
         {
 
 
             var user = _mapper.Map<User>(model);
 
-            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username).;
+            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username);
 
             if (exists != null)
             {
@@ -57,9 +59,46 @@ namespace Spaceship.Gateway.Services.Services
             return true;
         }
 
-        public Task<User> UpdateUser(UserModel model)
+        public async Task<User> UpdateInfoUser(UserModel model)
         {
-            throw new NotImplementedException();
+            var user = _mapper.Map<User>(model);
+
+            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username);
+
+            if (exists == null)
+            {
+                user.AddNotification(user.Login.Username, "Username nao existe");
+            }
+
+            if (user.Notifications.Any())
+            {
+                return user;
+            }
+
+            _users.FirstOrDefault(x => x.Id == user.Id).UpdateInfo(user);
+
+            return user;
         }
+
+        public async Task<User> UpdateLoginUser(UserModel model)
+        {
+            var user = _mapper.Map<User>(model);
+
+            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Id == user.Id);
+
+            if (exists == null)
+            {
+                user.AddNotification(user.Login.Username, "Username nao existe");
+            }
+
+            if (user.Notifications.Any())
+            {
+                return user;
+            }
+
+            _users.FirstOrDefault(x => x.Id == user.Id).UpdateLogin(user.Login);
+
+            return user;
+        }  
     }
 }

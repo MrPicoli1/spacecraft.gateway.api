@@ -1,6 +1,5 @@
 ﻿using Spaceship.Gateway.Domain.ValueObjects;
 using Spaceship.Gateway.Shared.Entities;
-using System.Xml.Linq;
 
 namespace Spaceship.Gateway.Domain.Entities
 {
@@ -30,6 +29,27 @@ namespace Spaceship.Gateway.Domain.Entities
         
 
         public List<Spaceships>? Spaceships { get; set; }
+
+
+
+        public void UpdateInfo(User user)
+        {
+            Name = user.Name;
+            Address = user.Address;
+            Updated();
+        }
+        public void UpdateLogin(Login login)
+        {
+            Login = login;
+            Updated();
+        }
+        public void AddMaterial(Material material)
+        {
+            Material.AddMaterial(material.Currency,material.Crystal,material.Metal);
+            Updated();
+        }
+        public void RepairSpaceship() { }
+        public void RankUpSpaceship() { }
 
     }
 }

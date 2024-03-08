@@ -1,6 +1,6 @@
 ﻿using Flunt.Validations;
 using Spaceship.Gateway.Shared.ValueObject;
-using System.IO;
+
 
 namespace Spaceship.Gateway.Domain.ValueObjects
 {

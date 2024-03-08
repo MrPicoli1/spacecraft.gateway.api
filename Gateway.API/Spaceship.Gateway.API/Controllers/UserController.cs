@@ -42,7 +42,7 @@ namespace Spaceship.Gateway.API.Controllers
         /// <returns>IActionResult</returns>
         /// <response code="200">If the user is created</response>
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> PostUser([FromBody] UserModel model)
         {
 
@@ -59,13 +59,41 @@ namespace Spaceship.Gateway.API.Controllers
         /// <summary>
         /// Update a User
         /// </summary>
-        /// <param name="model">Object for the Update of a User</param>
+        /// <param name="model">Object for the Update of the Info of a User</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the update occurred</response>
-        [HttpPut]
+        [HttpPut("info")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> PutUser([FromBody] UserModel model)
+        public async Task<IActionResult> PutInfoUser([FromBody] UserModel model)
         {
+
+            var user = await _userService.UpdateInfoUser(model);
+
+            if (user.Notifications.Any())
+            {
+                return BadRequest(user.Notifications);
+            }
+
+            return NoContent();
+        }
+
+        /// <summary>
+        /// Update a User
+        /// </summary>
+        /// <param name="model">Object for the Update of the Login of a User</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="204">If the update occurred</response>
+        [HttpPut("login")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public async Task<IActionResult> PutLoginUser([FromBody] UserModel model)
+        {
+
+            var user = await _userService.UpdateLoginUser(model);
+
+            if (user.Notifications.Any())
+            {
+                return BadRequest(user.Notifications);
+            }
 
             return NoContent();
         }
@@ -82,7 +110,13 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> DeleteUser([FromRoute] Guid id)
         {
 
+            var  deleted = await _userService.DeleteUser(id);
+
+            if(deleted)
             return NoContent();
+
+            return BadRequest();
+            
         }
     }
 }

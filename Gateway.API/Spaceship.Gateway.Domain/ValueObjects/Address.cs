@@ -16,8 +16,8 @@ namespace Spaceship.Gateway.Domain.ValueObjects
 
             AddNotifications(new Contract<Address>()
                 .Requires()
-                .IsGreaterThan(street, 3, "Rua deve conter pelo menos 3 Caracteres")
-                .IsGreaterThan(postalCode, 7, "Codigo Postal deve conter pelo menos 8 Digitos"));
+                .IsGreaterThan(street, 2, "Rua deve conter pelo menos 3 Caracteres")
+                .AreEquals(postalCode.Length, 8, "Codigo Postal deve conter 8 Digitos"));
 
         }
 

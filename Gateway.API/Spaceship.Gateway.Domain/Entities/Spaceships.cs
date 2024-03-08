@@ -27,5 +27,31 @@ namespace Spaceship.Gateway.Domain.Entities
 
         public User User { get; private set; }
 
+        public List<Mission>? Missions { get; set; }
+
+        public void Repair ()
+        {
+            Status.Repair();
+            Updated();
+        }
+        public void TakeDamage (int damage)
+        {
+            Status.TakeDamadge(damage);
+            Updated();
+        }
+
+        public void SendOnMission()
+        {
+            Idle = false; 
+            Updated();
+        }
+
+        public void ReturnFromMission() 
+        {
+            //Adicionar mais regras apos criacao da missao
+            Idle = true; 
+            Updated(); 
+        }
+
     }
 }

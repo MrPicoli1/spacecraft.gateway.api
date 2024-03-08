@@ -12,7 +12,16 @@ namespace Spaceship.Gateway.Domain.ValueObjects
             Rank = rank;
             Tier = tier;
 
-            RepairCost = 10 * (Tier) + (Rank * (15 / 100)) + TotalHP / CurrentHP;
+            if (totalHP == currentHP)
+            {
+                RepairCost = 0;
+            }
+            else
+            {
+                RepairCost = 10 * (Tier) + (Rank * (15 / 100)) + TotalHP / CurrentHP;
+            }
+
+            
             
 
         }
@@ -27,6 +36,18 @@ namespace Spaceship.Gateway.Domain.ValueObjects
         public void Repair()
         {
             CurrentHP = TotalHP;
+        }
+
+        public void TakeDamadge(int amount)
+        {
+            if (amount > CurrentHP)
+            {
+                CurrentHP = 0;
+            }
+            else
+            {
+                CurrentHP -= amount;
+            }
         }
 
     }

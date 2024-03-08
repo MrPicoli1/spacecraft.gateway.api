@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Spaceship.Gateway.Models.Mission;
 using Spaceship.Gateway.Models.Spaceship;
-using Spaceship.Gateway.Models.User;
+
 
 namespace Spaceship.Gateway.API.Controllers
 {
@@ -14,13 +14,13 @@ namespace Spaceship.Gateway.API.Controllers
         /// </summary>
         /// <param name="model">Object for the creation of a Spaceship</param>
         /// <returns>IActionResult</returns>
-        /// <response code="201">If the Spaceship is created</response>
+        /// <response code="200">If the Spaceship is created</response>
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> CreateSpaceship([FromBody] SpaceshipModel model)
         {
 
-            return Created();
+            return Ok();
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Spaceship.Gateway.API.Controllers
         /// <returns>IActionResult</returns>
         /// <response code="200">If it successifully gets an list of spaceships</response>
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetNewSpaceships()
         {
 
