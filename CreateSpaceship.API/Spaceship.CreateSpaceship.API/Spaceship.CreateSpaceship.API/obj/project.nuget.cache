@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "O9AX2uuzXzgcCNJFR6seRExfKZK+WSoIzK7yQLUa6X5yg1C/JrW7pt6QuuHqhEQ+E5/dABbS1sic5p7Qjjj0Eg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512"
+  ],
+  "logs": []
+}

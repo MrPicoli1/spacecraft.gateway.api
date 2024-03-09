@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rCVndoCvYm3Uyc+ZsFIsWWXvKVvk31fwUfE3AdS1UWA=",
+  "Source": "Spaceship.CreateSpaceship.API",
+  "BasePath": "_content/Spaceship.CreateSpaceship.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
