@@ -40,8 +40,9 @@ namespace Spaceship.Gateway.Domain.Entities
             Updated();
         }
 
-        public void SendOnMission()
+        public void SendOnMission(Mission mission)
         {
+            MissionEnd = mission.EndMission;
             Idle = false; 
             Updated();
         }

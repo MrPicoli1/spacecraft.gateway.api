@@ -23,8 +23,8 @@ namespace Spaceship.Gateway.Models.Spaceship
         public bool Idle { get; private set; }
         public DateTime? MissionEnd { get;  set; }
 
-        public Guid UserId { get;  set; }
+        public Guid? UserId { get;  set; }
 
-        public UserModel User { get;  set; }
+        public UserModel? User { get;  set; }
     }
 }

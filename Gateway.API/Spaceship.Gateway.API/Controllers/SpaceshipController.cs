@@ -1,14 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Spaceship.Gateway.Models.Mission;
 using Spaceship.Gateway.Models.Spaceship;
+using Spaceship.Gateway.Services.Interfaces;
 
 
 namespace Spaceship.Gateway.API.Controllers
 {
+
+    
+
     [ApiController]
     [Route("api/v1/gateway/spaceship")]
     public class SpaceshipController : Controller
     {
+
+        private readonly ISpaceshipService _spaceshipService;
+
+        public SpaceshipController(ISpaceshipService spaceshipService)
+        {
+            _spaceshipService = spaceshipService;
+        }
+
         /// <summary>
         /// Add a new Spaceship
         /// </summary>
@@ -19,8 +31,14 @@ namespace Spaceship.Gateway.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> CreateSpaceship([FromBody] SpaceshipModel model)
         {
+            var spaceship = await _spaceshipService.PostSpaceAsync(model);
 
-            return Ok();
+            if(spaceship.Notifications.Any())
+            {
+                return BadRequest(spaceship.Notifications);
+            }
+
+            return Ok(spaceship);
         }
 
         /// <summary>
@@ -34,7 +52,13 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> GetNewSpaceships()
         {
 
-            return Ok();
+            var spaceshipList = await _spaceshipService.GetNewSpaceshipsAsync();
+            if(spaceshipList.Count == 0)
+            {
+                return BadRequest();
+            }
+
+            return Ok(spaceshipList);
         }
 
         /// <summary>

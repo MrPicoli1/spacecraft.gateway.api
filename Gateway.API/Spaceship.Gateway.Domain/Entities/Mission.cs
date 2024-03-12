@@ -21,9 +21,11 @@ namespace Spaceship.Gateway.Domain.Entities
         public Material MaxMaterial { get; private set; }
         public Material MinMaterial { get; private set; }
         public Difficulty Difficulty { get; private set; }
+        public DateTime EndMission {  get; private set; }
 
         public Guid SpaceshipId { get; private set; }
         public Spaceships Spaceship { get; private set; }
+        
 
 
     }

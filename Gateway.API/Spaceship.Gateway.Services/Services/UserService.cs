@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
-using Flunt.Validations;
 using Spaceship.Gateway.Domain.Entities;
 using Spaceship.Gateway.Models.User;
 using Spaceship.Gateway.Services.Interfaces;
-using System.Diagnostics.Metrics;
 
 namespace Spaceship.Gateway.Services.Services
 {
@@ -20,7 +18,7 @@ namespace Spaceship.Gateway.Services.Services
 
       
 
-        public async Task<User> AddUser(UserModel model)
+        public async Task<User> AddUserAsync(UserModel model)
         {
 
 
@@ -43,7 +41,7 @@ namespace Spaceship.Gateway.Services.Services
             return user;
         }
 
-        public async Task<bool> DeleteUser(Guid Id)
+        public async Task<bool> DeleteUserAsync(Guid Id)
         {
             var exists = _users.FirstOrDefault(x => x.Id == Id);
 
@@ -59,7 +57,7 @@ namespace Spaceship.Gateway.Services.Services
             return true;
         }
 
-        public async Task<User> UpdateInfoUser(UserModel model)
+        public async Task<User> UpdateInfoUserAsync(UserModel model)
         {
             var user = _mapper.Map<User>(model);
 
@@ -80,7 +78,7 @@ namespace Spaceship.Gateway.Services.Services
             return user;
         }
 
-        public async Task<User> UpdateLoginUser(UserModel model)
+        public async Task<User> UpdateLoginUserAsync(UserModel model)
         {
             var user = _mapper.Map<User>(model);
 

@@ -46,7 +46,7 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> PostUser([FromBody] UserModel model)
         {
 
-            var user = await _userService.AddUser(model);
+            var user = await _userService.AddUserAsync(model);
 
             if (user.Notifications.Any())
             {
@@ -67,7 +67,7 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> PutInfoUser([FromBody] UserModel model)
         {
 
-            var user = await _userService.UpdateInfoUser(model);
+            var user = await _userService.UpdateInfoUserAsync(model);
 
             if (user.Notifications.Any())
             {
@@ -87,8 +87,8 @@ namespace Spaceship.Gateway.API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> PutLoginUser([FromBody] UserModel model)
         {
-
-            var user = await _userService.UpdateLoginUser(model);
+            //finalizar o servico
+            var user = await _userService.UpdateLoginUserAsync(model);
 
             if (user.Notifications.Any())
             {
@@ -110,7 +110,7 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> DeleteUser([FromRoute] Guid id)
         {
 
-            var  deleted = await _userService.DeleteUser(id);
+            var  deleted = await _userService.DeleteUserAsync(id);
 
             if(deleted)
             return NoContent();
