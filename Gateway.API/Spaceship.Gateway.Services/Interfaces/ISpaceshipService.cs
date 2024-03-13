@@ -9,7 +9,7 @@ namespace Spaceship.Gateway.Services.Interfaces
         Task<List<Spaceships>> GetAllSpaceshipsAsync(Guid userId);
         Task<Spaceships> PostSpaceAsync(SpaceshipModel model);
         Task<Spaceships> SendOnMission(Guid spaceshipId, Mission mission);
-        Task<Spaceships> Repair(Guid spaceshipId);
+        Task<Spaceships> Repair(Guid spaceshipId, int currency);
         Task<Spaceships> RankUp(Guid spaceshipId);
         Task<bool> DeleteSpaceshipAsync(Guid spaceshipId);
     }

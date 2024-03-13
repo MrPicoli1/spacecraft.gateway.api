@@ -29,15 +29,25 @@ namespace Spaceship.Gateway.Domain.Entities
 
         public List<Mission>? Missions { get; set; }
 
-        public void Repair ()
+        public void Repair (int porcentage)
         {
-            Status.Repair();
+            Status.Repair(porcentage);
             Updated();
         }
         public void TakeDamage (int damage)
         {
             Status.TakeDamadge(damage);
             Updated();
+        }
+
+        public void RankUp()
+        {
+            if (Status.Rank == 5)
+                AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
+            else
+            {
+                Status.RankUp();
+            }
         }
 
         public void SendOnMission(Mission mission)
@@ -53,6 +63,8 @@ namespace Spaceship.Gateway.Domain.Entities
             Idle = true; 
             Updated(); 
         }
+
+
 
     }
 }

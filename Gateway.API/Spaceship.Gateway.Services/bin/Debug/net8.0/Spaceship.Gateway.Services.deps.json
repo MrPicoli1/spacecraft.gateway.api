@@ -20,6 +20,7 @@
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Spaceship.Gateway.Data": "1.0.0",
           "Spaceship.Gateway.Domain": "1.0.0",
+          "Spaceship.Gateway.Extensions": "1.0.0",
           "Spaceship.Gateway.Models": "1.0.0",
           "Spaceship.Gateway.Security": "1.0.0"
         },
@@ -446,6 +447,15 @@
           "Spaceship.Gateway.Domain.dll": {}
         }
       },
+      "Spaceship.Gateway.Extensions/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.15",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "runtime": {
+          "Spaceship.Gateway.Extensions.dll": {}
+        }
+      },
       "Spaceship.Gateway.Models/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
@@ -800,6 +810,11 @@
       "sha512": ""
     },
     "Spaceship.Gateway.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Spaceship.Gateway.Extensions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

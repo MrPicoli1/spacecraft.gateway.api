@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Spaceship.Gateway.Domain.Entities;
+using Spaceship.Gateway.Extensions.Http;
 using Spaceship.Gateway.Models.Spaceship;
 using Spaceship.Gateway.Services.Interfaces;
 using System.Net.Http.Json;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Spaceship.Gateway.Services.Services
 {
@@ -11,6 +11,7 @@ namespace Spaceship.Gateway.Services.Services
     {
         private List<Spaceships> _spaceships;
         private readonly IMapper _mapper;
+        private readonly HttpClientExtensions<SpaceshipModel> _httpClient;
 
         public SpaceshipService(IMapper mapper)
         {
@@ -40,16 +41,11 @@ namespace Spaceship.Gateway.Services.Services
 
         public async Task<List<SpaceshipModel>> GetNewSpaceshipsAsync()
         {
-            HttpClient httpClient = new HttpClient();
-
             var url = "https://localhost:7414/";
-
-            //var json = JsonSerializer.Serialize(model);
-            // var data = new StringContent(json, Encoding.UTF8, "application/json");
-            var responseMessage = await httpClient.GetAsync(url);
+            var responseMessage = await _httpClient.GetList(url);
             if (responseMessage != null)
             {
-                return await responseMessage.Content.ReadFromJsonAsync<List<SpaceshipModel>>();
+                return responseMessage;
             }
 
             return null;
@@ -70,14 +66,18 @@ namespace Spaceship.Gateway.Services.Services
 
         }
 
-        public Task<Spaceships> RankUp(Guid spaceshipId)
+        public async Task<Spaceships> RankUp(Guid spaceshipId)
         {
-            throw new NotImplementedException();
+           _spaceships.FirstOrDefault(x=>x.Id == spaceshipId)?.RankUp();
+            return _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
         }
 
-        public Task<Spaceships> Repair(Guid spaceshipId)
+        public async Task<Spaceships> Repair(Guid spaceshipId, int currency)
         {
-            throw new NotImplementedException();
+            var spaceship = _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
+            int porcentage = currency / spaceship!.Status.RepairCost;
+            _spaceships.FirstOrDefault(x => x.Id == spaceshipId)?.Repair(porcentage);
+            return _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
         }
 
         public Task<Spaceships> SendOnMission(Guid spaceshipId, Mission mission)

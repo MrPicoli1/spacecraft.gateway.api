@@ -906,6 +906,7 @@
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Spaceship.Gateway.Data": "1.0.0",
           "Spaceship.Gateway.Domain": "1.0.0",
+          "Spaceship.Gateway.Extensions": "1.0.0",
           "Spaceship.Gateway.Models": "1.0.0",
           "Spaceship.Gateway.Security": "1.0.0"
         },

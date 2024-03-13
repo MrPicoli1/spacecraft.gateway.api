@@ -33,9 +33,9 @@ namespace Spaceship.Gateway.Domain.ValueObjects
         public int Rank { get; private set; }
         public int Tier { get; private set; }
 
-        public void Repair()
+        public void Repair(int porcentage)
         {
-            CurrentHP = TotalHP;
+            CurrentHP = (porcentage/100)*TotalHP;
         }
 
         public void TakeDamadge(int amount)
@@ -48,6 +48,10 @@ namespace Spaceship.Gateway.Domain.ValueObjects
             {
                 CurrentHP -= amount;
             }
+        }
+        public void RankUp()
+        {
+            Rank += 1;
         }
 
     }

@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Spaceship.Gateway.Data\Spaceship.Gateway.Data.csproj" />
     <ProjectReference Include="..\Spaceship.Gateway.Domain\Spaceship.Gateway.Domain.csproj" />
+    <ProjectReference Include="..\Spaceship.Gateway.Extensions\Spaceship.Gateway.Extensions.csproj" />
     <ProjectReference Include="..\Spaceship.Gateway.Models\Spaceship.Gateway.Models.csproj" />
     <ProjectReference Include="..\Spaceship.Gateway.Security\Spaceship.Gateway.Security.csproj" />
   </ItemGroup>

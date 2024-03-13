@@ -3,15 +3,15 @@
     public class StatusModel
     {
         private Random random = new Random();
-        public StatusModel(int rank)
+        public StatusModel(int tier)
         {
 
-            TotalHP = random.Next(20*rank,40*rank);
+            TotalHP = random.Next(20* tier, 40* tier);
             CurrentHP = TotalHP;
             RepairCost = 0;
-            Damage = random.Next(5*rank,15*rank);
-            Rank = rank;
-            Tier = 0;
+            Damage = random.Next(5* tier, 15* tier);
+            Rank = 0;
+            Tier = tier;
         }
 
         public int TotalHP { get; set; }
