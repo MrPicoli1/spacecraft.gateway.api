@@ -3,7 +3,6 @@ using Spaceship.Gateway.Domain.Entities;
 using Spaceship.Gateway.Extensions.Http;
 using Spaceship.Gateway.Models.Spaceship;
 using Spaceship.Gateway.Services.Interfaces;
-using System.Net.Http.Json;
 
 namespace Spaceship.Gateway.Services.Services
 {
@@ -11,11 +10,12 @@ namespace Spaceship.Gateway.Services.Services
     {
         private List<Spaceships> _spaceships;
         private readonly IMapper _mapper;
-        private readonly HttpClientExtensions<SpaceshipModel> _httpClient;
+        private readonly HttpClientExtensions _httpClient;
 
-        public SpaceshipService(IMapper mapper)
+        public SpaceshipService(IMapper mapper, HttpClientExtensions httpClient)
         {
             _mapper = mapper;
+            _httpClient = httpClient;
         }
 
         public async Task<bool> DeleteSpaceshipAsync(Guid spaceshipId)
@@ -42,7 +42,7 @@ namespace Spaceship.Gateway.Services.Services
         public async Task<List<SpaceshipModel>> GetNewSpaceshipsAsync()
         {
             var url = "https://localhost:7414/";
-            var responseMessage = await _httpClient.GetList(url);
+            var responseMessage = await _httpClient.GetList<SpaceshipModel>(url);
             if (responseMessage != null)
             {
                 return responseMessage;

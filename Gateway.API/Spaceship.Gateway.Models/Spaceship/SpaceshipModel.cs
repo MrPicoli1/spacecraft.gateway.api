@@ -7,15 +7,21 @@ namespace Spaceship.Gateway.Models.Spaceship
     {
         public SpaceshipModel(StatusModel status,
                         bool idle,
-                        Guid userId,
-                        UserModel user,
                         MaterialModel baseRankUpMaterial)
         {
             Idle = idle;
-            UserId = userId;
-            User = user;
             Status = status;
             BaseRankUpMaterial = baseRankUpMaterial;
+        }
+
+        public SpaceshipModel(StatusModel status, MaterialModel baseRankUpMaterial, bool idle, DateTime? missionEnd, Guid? userId, UserModel? user)
+        {
+            Status = status;
+            BaseRankUpMaterial = baseRankUpMaterial;
+            Idle = idle;
+            MissionEnd = missionEnd;
+            UserId = userId;
+            User = user;
         }
 
         public StatusModel Status { get;  set; }

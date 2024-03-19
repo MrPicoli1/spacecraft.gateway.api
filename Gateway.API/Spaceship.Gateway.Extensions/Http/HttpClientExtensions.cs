@@ -4,23 +4,23 @@ using System.Text.Json;
 
 namespace Spaceship.Gateway.Extensions.Http
 {
-    public class HttpClientExtensions<T> where T : class
+    public class HttpClientExtensions
     {
-        public async Task<List<T>> GetList(string url)
+        public async Task<List<T>> GetList<T>(string url) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var responseMessage = await httpClient.GetAsync(url);
             return await responseMessage.Content.ReadFromJsonAsync<List<T>>();
         }
 
-        public async Task<T> Get(string url)
+        public async Task<T> Get<T>(string url) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var responseMessage = await httpClient.GetAsync(url);
             return await responseMessage.Content.ReadFromJsonAsync<T>();
         }
 
-        public async Task<T> Post(string url, T obj)
+        public async Task<T> Post<T>(string url, T obj) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var json = JsonSerializer.Serialize(obj);

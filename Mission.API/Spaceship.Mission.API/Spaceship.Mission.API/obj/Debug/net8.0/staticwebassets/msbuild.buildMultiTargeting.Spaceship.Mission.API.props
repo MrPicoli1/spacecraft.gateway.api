@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Spaceship.Mission.API.props" />
+</Project>

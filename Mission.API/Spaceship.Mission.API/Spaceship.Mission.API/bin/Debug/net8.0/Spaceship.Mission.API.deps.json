@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Spaceship.Mission.API/1.0.0": {
+        "runtime": {
+          "Spaceship.Mission.API.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Spaceship.Mission.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

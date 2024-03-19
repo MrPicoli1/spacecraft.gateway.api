@@ -7,8 +7,7 @@ builder.Services.AddTransient<ISpaceshipService, SpaceshipService>();
 
 var app = builder.Build();
 
-app.MapGet("/", (ISpaceshipService service)
-    =>
+app.MapGet("/", (ISpaceshipService service) =>
 {
     return service.CreateSpaceships();
 }

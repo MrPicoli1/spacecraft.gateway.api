@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zXaWRIAsejLCgnPq1nsfM6QmJmVMfqhOFv4nQttG41A=",
+  "Source": "Spaceship.Mission.API",
+  "BasePath": "_content/Spaceship.Mission.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

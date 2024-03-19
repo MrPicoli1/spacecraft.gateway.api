@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spaceship.CreateSpaceship.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a517f922e8f283a912c35e974c8e0d6a89e9594")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82d6b0b97bfe52a7f01ea4bca68b7d29ddf11374")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spaceship.CreateSpaceship.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spaceship.CreateSpaceship.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

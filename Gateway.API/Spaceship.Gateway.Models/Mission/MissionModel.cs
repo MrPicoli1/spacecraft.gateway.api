@@ -5,8 +5,14 @@ namespace Spaceship.Gateway.Models.Mission
 {
     public class MissionModel
     {
-        public MissionModel(MaterialModel maxMaterial, MaterialModel minMaterial, DifficultyModel difficulty,
-          Guid spaceshipId, SpaceshipModel spaceship)
+        public MissionModel(MaterialModel maxMaterial, MaterialModel minMaterial, DifficultyModel difficulty)
+        {
+            MaxMaterial = maxMaterial;
+            MinMaterial = minMaterial;
+            Difficulty = difficulty;
+        }
+
+        public MissionModel(MaterialModel maxMaterial, MaterialModel minMaterial, DifficultyModel difficulty, Guid? spaceshipId, SpaceshipModel? spaceship)
         {
             MaxMaterial = maxMaterial;
             MinMaterial = minMaterial;
@@ -19,8 +25,8 @@ namespace Spaceship.Gateway.Models.Mission
         public MaterialModel MinMaterial { get;  set; }
         public DifficultyModel Difficulty { get;  set; }
 
-        public Guid SpaceshipId { get;  set; }
-        public SpaceshipModel Spaceship { get;  set; }
+        public Guid? SpaceshipId { get;  set; }
+        public SpaceshipModel? Spaceship { get;  set; }
 
 
 
