@@ -12,8 +12,6 @@ namespace Spaceship.Gateway.Shared.Entities
             UpdatedDate = DateTime.Now;
             Deleted = false;
         }
-
-
         public Guid Id { get; private set; }
 
         public DateTime CreatedDate { get; private set; }

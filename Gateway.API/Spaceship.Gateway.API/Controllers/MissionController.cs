@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Spaceship.Gateway.Services.Interfaces;
 
 
 namespace Spaceship.Gateway.API.Controllers
@@ -8,6 +9,12 @@ namespace Spaceship.Gateway.API.Controllers
     [Route("api/v1/gateway/mission")]
     public class MissionController : Controller
     {
+        private readonly IMissionService _missionService;
+        public MissionController(IMissionService missionService)
+        {
+            _missionService = missionService;
+        }
+
         /// <summary>
         /// Get a List of Missions
         /// </summary>
@@ -19,7 +26,7 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> GetMission()
         {
 
-            return Ok();
+            return Ok(_missionService.CreateMissionsAsync());
         }
 
         /// <summary>

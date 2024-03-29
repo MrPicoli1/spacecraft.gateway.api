@@ -1,4 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Profiles;
 using Spaceship.Gateway.Extensions.Http;
 using Spaceship.Gateway.Models.Spaceship;
@@ -28,8 +32,15 @@ builder.Services.AddTransient<IMissionService, MissionService>();
 builder.Services.AddAutoMapper(typeof(SpaceshipProfiles));
 builder.Services.AddScoped<HttpClientExtensions>();
 
+var connectionStringSQL = builder.Configuration.GetConnectionString("MySQL");
 
-//builder.Services.AddDbContext<SpaceshipMySQLContext>(opts => opts.UseMySql("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;", ServerVersion.AutoDetect("Server=127.0.0.1;Port=3306;Database=DePloy;Uid=gui;Pwd=123123;")));
+builder.Services.AddDbContext<SpaceshipMySQLContext>(opts =>
+{
+    opts.UseMySql(connectionStringSQL,ServerVersion.AutoDetect(connectionStringSQL));
+});
+
+
+//builder.Services
 
 var app = builder.Build();
 

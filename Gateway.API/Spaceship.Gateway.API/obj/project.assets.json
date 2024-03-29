@@ -449,7 +449,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.23.1": {
+      "MongoDB.Bson/2.22.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
@@ -466,12 +466,12 @@
           }
         }
       },
-      "MongoDB.Driver/2.23.1": {
+      "MongoDB.Driver/2.22.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.23.1",
-          "MongoDB.Driver.Core": "2.23.1",
+          "MongoDB.Bson": "2.22.0",
+          "MongoDB.Driver.Core": "2.22.0",
           "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
@@ -485,18 +485,18 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.23.1": {
+      "MongoDB.Driver.Core/2.22.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.23.1",
+          "MongoDB.Bson": "2.22.0",
           "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
-          "ZstdSharp.Port": "0.7.3"
+          "ZstdSharp.Port": "0.6.2"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
@@ -507,6 +507,19 @@
           "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MongoDB.EntityFrameworkCore/7.0.0-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "MongoDB.Driver": "2.22.0"
+        },
+        "compile": {
+          "lib/net7.0/MongoDB.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/MongoDB.EntityFrameworkCore.dll": {}
         }
       },
       "MongoDB.Libmongocrypt/1.8.0": {
@@ -798,13 +811,13 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "ZstdSharp.Port/0.7.3": {
+      "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
-          "lib/net7.0/ZstdSharp.dll": {}
+          "lib/net6.0/ZstdSharp.dll": {}
         },
         "runtime": {
-          "lib/net7.0/ZstdSharp.dll": {}
+          "lib/net6.0/ZstdSharp.dll": {}
         }
       },
       "Spaceship.Gateway.Data/1.0.0": {
@@ -813,10 +826,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.15",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "MongoDB.Bson": "2.23.1",
-          "MongoDB.Driver": "2.23.1",
-          "MongoDB.Driver.Core": "2.23.1",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
+          "Spaceship.Gateway.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Spaceship.Gateway.Data.dll": {}
@@ -900,9 +911,6 @@
           "Flunt": "2.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.15",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "MongoDB.Bson": "2.23.1",
-          "MongoDB.Driver": "2.23.1",
-          "MongoDB.Driver.Core": "2.23.1",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Spaceship.Gateway.Data": "1.0.0",
           "Spaceship.Gateway.Domain": "1.0.0",
@@ -1875,56 +1883,75 @@
         "version.txt"
       ]
     },
-    "MongoDB.Bson/2.23.1": {
-      "sha512": "IX9tycM35xK5hFwnU+rzharPJOtKYtON6E6Lp2nwOVjh40TUcS/HYToEEWZkLgqKNMCfYPK3Fz3QUCxzhkQRGA==",
+    "MongoDB.Bson/2.22.0": {
+      "sha512": "7Z+uP+PeIBrkzzRORTCjrMSYhzQgXxLYkXyML8WsBN7tHddicNY9Xh8Cmp5gRR4U4NuEbXCQtHplju0iVY/KuA==",
       "type": "package",
-      "path": "mongodb.bson/2.23.1",
+      "path": "mongodb.bson/2.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "lib/net472/MongoDB.Bson.dll",
+        "lib/net472/MongoDB.Bson.xml",
         "lib/netstandard2.0/MongoDB.Bson.dll",
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.23.1.nupkg.sha512",
+        "mongodb.bson.2.22.0.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver/2.23.1": {
-      "sha512": "kidqCwGBuLBx2IcW4os3J6zsp9yaUWm7Sp8G08Nm2RVRSAf0cJXfsynl2wRWpHh0HgfIzzwkevP/qhfsKfu8bQ==",
+    "MongoDB.Driver/2.22.0": {
+      "sha512": "ngswtmzdtfaq+L0Ti1Kjm0QnVLgEJK233YPCpGN2buSArY2xEPsnQ2yos7SPGxuDzZPnxdn+XG9/OBt9atCpWw==",
       "type": "package",
-      "path": "mongodb.driver/2.23.1",
+      "path": "mongodb.driver/2.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "lib/net472/MongoDB.Driver.dll",
+        "lib/net472/MongoDB.Driver.xml",
         "lib/netstandard2.0/MongoDB.Driver.dll",
         "lib/netstandard2.0/MongoDB.Driver.xml",
         "lib/netstandard2.1/MongoDB.Driver.dll",
         "lib/netstandard2.1/MongoDB.Driver.xml",
-        "mongodb.driver.2.23.1.nupkg.sha512",
+        "mongodb.driver.2.22.0.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver.Core/2.23.1": {
-      "sha512": "K8LMdnVgT82vdbSllv8VzjPOLa9k5rLcCBd1fG45z+QGJNPWzAFW5lLgLJQ7xXuJgQIwvP1DBx6X6ecWBtox7g==",
+    "MongoDB.Driver.Core/2.22.0": {
+      "sha512": "aMlyeGbQ9wk/bmy9xSr6dnkOszO3MVgv1wNcsm4ACwiup//VCZxvj5k0Wq/E0xGBYmqs/tNXqJmLy1IawRXPHA==",
       "type": "package",
-      "path": "mongodb.driver.core/2.23.1",
+      "path": "mongodb.driver.core/2.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "THIRD-PARTY-NOTICES",
+        "lib/net472/MongoDB.Driver.Core.dll",
+        "lib/net472/MongoDB.Driver.Core.xml",
         "lib/netstandard2.0/MongoDB.Driver.Core.dll",
         "lib/netstandard2.0/MongoDB.Driver.Core.xml",
         "lib/netstandard2.1/MongoDB.Driver.Core.dll",
         "lib/netstandard2.1/MongoDB.Driver.Core.xml",
-        "mongodb.driver.core.2.23.1.nupkg.sha512",
+        "mongodb.driver.core.2.22.0.nupkg.sha512",
         "mongodb.driver.core.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "MongoDB.EntityFrameworkCore/7.0.0-preview.1": {
+      "sha512": "AwfjV3WEm+tP4Qka+hBh3HFhh7gHxpATUyeTPYmqafgOBRLBPQgvhDqX9gIvOUXyquPc03Qnux13jFja8jxwEg==",
+      "type": "package",
+      "path": "mongodb.entityframeworkcore/7.0.0-preview.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net7.0/MongoDB.EntityFrameworkCore.dll",
+        "mongodb.entityframeworkcore.7.0.0-preview.1.nupkg.sha512",
+        "mongodb.entityframeworkcore.nuspec"
       ]
     },
     "MongoDB.Libmongocrypt/1.8.0": {
@@ -2443,21 +2470,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ZstdSharp.Port/0.7.3": {
-      "sha512": "U9Ix4l4cl58Kzz1rJzj5hoVTjmbx1qGMwzAcbv1j/d3NzrFaESIurQyg+ow4mivCgkE3S413y+U9k4WdnEIkRA==",
+    "ZstdSharp.Port/0.6.2": {
+      "sha512": "jPao/LdUNLUz8rn3H1D8W7wQbZsRZM0iayvWI4xGejJg3XJHT56gcmYdgmCGPdJF1UEBqUjucCRrFB+4HbJsbw==",
       "type": "package",
-      "path": "zstdsharp.port/0.7.3",
+      "path": "zstdsharp.port/0.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/ZstdSharp.dll",
         "lib/net5.0/ZstdSharp.dll",
         "lib/net6.0/ZstdSharp.dll",
-        "lib/net7.0/ZstdSharp.dll",
         "lib/netcoreapp3.1/ZstdSharp.dll",
         "lib/netstandard2.0/ZstdSharp.dll",
         "lib/netstandard2.1/ZstdSharp.dll",
-        "zstdsharp.port.0.7.3.nupkg.sha512",
+        "zstdsharp.port.0.6.2.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
     },
@@ -2504,9 +2530,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.15",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
-      "MongoDB.Bson >= 2.23.1",
-      "MongoDB.Driver >= 2.23.1",
-      "MongoDB.Driver.Core >= 2.23.1",
+      "MongoDB.EntityFrameworkCore >= 7.0.0-preview.1",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "Spaceship.Gateway.Data >= 1.0.0",
       "Spaceship.Gateway.Domain >= 1.0.0",
@@ -2579,6 +2603,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2607,17 +2636,9 @@
             "target": "Package",
             "version": "[8.0.0, )"
           },
-          "MongoDB.Bson": {
+          "MongoDB.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[2.23.1, )"
-          },
-          "MongoDB.Driver": {
-            "target": "Package",
-            "version": "[2.23.1, )"
-          },
-          "MongoDB.Driver.Core": {
-            "target": "Package",
-            "version": "[2.23.1, )"
+            "version": "[7.0.0-preview.1, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
@@ -2647,7 +2668,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

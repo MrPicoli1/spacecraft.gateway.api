@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spaceship.Gateway.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82d6b0b97bfe52a7f01ea4bca68b7d29ddf11374")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+065d8cb937488bb3a0ee3607ac470f7867b4b2fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spaceship.Gateway.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spaceship.Gateway.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
