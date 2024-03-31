@@ -65,7 +65,6 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Spaceship.Gateway.API.props
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\scopedcss\bundle\Spaceship.Gateway.API.styles.css
-C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceship.Gateway.API.csproj.CopyComplete
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceship.Gateway.API.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\refint\Spaceship.Gateway.API.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceship.Gateway.API.pdb
@@ -73,3 +72,4 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\ref\Spaceship.Gateway.API.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\bin\Debug\net8.0\Spaceship.Gateway.API.xml
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceship.Gateway.API.xml
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceshi.9EF8C151.Up2Date

@@ -1,11 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Profiles;
 using Spaceship.Gateway.Extensions.Http;
-using Spaceship.Gateway.Models.Spaceship;
 using Spaceship.Gateway.Services.Interfaces;
 using Spaceship.Gateway.Services.Services;
 using System.Reflection;
@@ -39,6 +36,8 @@ builder.Services.AddDbContext<SpaceshipMySQLContext>(opts =>
     opts.UseMySql(connectionStringSQL,ServerVersion.AutoDetect(connectionStringSQL));
 });
 
+builder.Services.Configure<SpaceshipMongoDbSettings>(
+    builder.Configuration.GetSection("MissionMongoDatabase"));
 
 //builder.Services
 

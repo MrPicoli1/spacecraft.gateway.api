@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Spaceship.Gateway.Models.Mission;
 using Spaceship.Gateway.Services.Interfaces;
 
 
@@ -27,6 +28,21 @@ namespace Spaceship.Gateway.API.Controllers
         {
 
             return Ok(_missionService.CreateMissionsAsync());
+        }
+
+        /// <summary>
+        /// Send on a Mission
+        /// </summary>
+        /// <param name="id">Id of the desired spaceship</param>
+        /// <param name="model">Object representing a Mission</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="204">If the the spaceShip is sent on a mission</response>
+        [HttpPut("start-mission/{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public async Task<IActionResult> StartMission([FromRoute] Guid id, [FromBody] MissionModel model)
+        {
+
+            return NoContent();
         }
 
         /// <summary>

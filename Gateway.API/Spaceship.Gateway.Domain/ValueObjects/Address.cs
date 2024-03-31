@@ -13,12 +13,6 @@ namespace Spaceship.Gateway.Domain.ValueObjects
             City = city;
             PostalCode = postalCode;
             Country = country;
-
-            AddNotifications(new Contract<Address>()
-                .Requires()
-                .IsGreaterThan(street, 2, "Rua deve conter pelo menos 3 Caracteres")
-                .AreEquals(postalCode.Length, 8, "Codigo Postal deve conter 8 Digitos"));
-
         }
 
         public string Street { get; private set; }

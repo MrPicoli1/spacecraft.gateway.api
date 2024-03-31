@@ -13,3 +13,10 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceship.Gateway.Data.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\ref\Spaceship.Gateway.Data.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Domain.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Models.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Domain.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Models.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\bin\Debug\net8.0\Spaceship.Gateway.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Data\obj\Debug\net8.0\Spaceshi.5F2FE365.Up2Date

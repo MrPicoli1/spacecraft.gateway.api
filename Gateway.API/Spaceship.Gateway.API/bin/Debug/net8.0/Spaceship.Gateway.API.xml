@@ -12,6 +12,15 @@
             <returns>IActionResult</returns>
             <response code="200">If the update occurred</response>
         </member>
+        <member name="M:Spaceship.Gateway.API.Controllers.MissionController.StartMission(System.Guid,Spaceship.Gateway.Models.Mission.MissionModel)">
+            <summary>
+            Send on a Mission
+            </summary>
+            <param name="id">Id of the desired spaceship</param>
+            <param name="model">Object representing a Mission</param>
+            <returns>IActionResult</returns>
+            <response code="204">If the the spaceShip is sent on a mission</response>
+        </member>
         <member name="M:Spaceship.Gateway.API.Controllers.MissionController.EndMission(System.Guid)">
             <summary>
             Finish a Mission of a Spaceship
@@ -44,22 +53,14 @@
             <returns>IActionResult</returns>
             <response code="204">If the rank up occurred</response>
         </member>
-        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.Repair(System.Guid)">
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.Repair(System.Guid,System.Int32)">
             <summary>
             Repais the Spaceship
             </summary>
             <param name="id">Id of the desired spaceship</param>
+            <param name="currency">money required to repair the spaceship</param>
             <returns>IActionResult</returns>
             <response code="204">If the repair occurred</response>
-        </member>
-        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.SendOnMission(System.Guid,Spaceship.Gateway.Models.Mission.MissionModel)">
-            <summary>
-            Send on a Mission
-            </summary>
-            <param name="id">Id of the desired spaceship</param>
-            // <param name="model">Object representing a Mission</param>
-            <returns>IActionResult</returns>
-            <response code="204">If the the spaceShip is sent on a mission</response>
         </member>
         <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.DeleteSpaceship(System.Guid)">
             <summary>

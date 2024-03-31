@@ -55,10 +55,10 @@ namespace Spaceship.Gateway.Services.Services
         {
             var spaceship = _mapper.Map<Spaceships>(model);
 
-            if (spaceship.Notifications.Any())
-            {
-                return spaceship;
-            }
+            //if (spaceship.Notifications.Any())
+            //{
+            //    return spaceship;
+            //}
 
             _spaceships.Add(spaceship);
 
@@ -80,9 +80,5 @@ namespace Spaceship.Gateway.Services.Services
             return _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
         }
 
-        public Task<Spaceships> SendOnMission(Guid spaceshipId, Mission mission)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

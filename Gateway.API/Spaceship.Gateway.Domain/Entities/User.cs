@@ -15,11 +15,10 @@ namespace Spaceship.Gateway.Domain.Entities
             Email = email;
             Address = address;
             Material = material;
-            Name = name;
-
-            AddNotifications(name, email, login);
-            
+            Name = name;    
         }
+
+        private User() { }
 
         public Name Name { get; private set; }
         public Login Login { get; private set; }

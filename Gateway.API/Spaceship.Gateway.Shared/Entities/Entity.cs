@@ -1,19 +1,22 @@
 ﻿using Flunt.Notifications;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Spaceship.Gateway.Shared.Entities
 {
-    public abstract class Entity : Notifiable<Notification>
+    public abstract class Entity
     {
 
-      public Entity() 
-        { 
+        public Entity()
+        {
             Id = Guid.NewGuid();
             CreatedDate = DateTime.Now;
             UpdatedDate = DateTime.Now;
             Deleted = false;
         }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
         public Guid Id { get; private set; }
-
         public DateTime CreatedDate { get; private set; }
         public DateTime? DeletedDate { get; private set; }
         public DateTime UpdatedDate { get; private set; }

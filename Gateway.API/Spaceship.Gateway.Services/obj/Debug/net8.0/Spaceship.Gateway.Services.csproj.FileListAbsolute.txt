@@ -23,6 +23,6 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Models.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Security.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Shared.pdb
-C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\obj\Debug\net8.0\Spaceship.Gateway.Services.csproj.CopyComplete
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Extensions.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\bin\Debug\net8.0\Spaceship.Gateway.Extensions.pdb
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Services\obj\Debug\net8.0\Spaceshi.F7920054.Up2Date

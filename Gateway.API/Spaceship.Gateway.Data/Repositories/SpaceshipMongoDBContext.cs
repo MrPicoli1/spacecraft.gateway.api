@@ -1,15 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Spaceship.Gateway.Domain.Entities;
-
+﻿
 namespace Spaceship.Gateway.Data.Repositories
 {
-    public class SpaceshipMongoDBContext :DbContext
+    public class SpaceshipMongoDBContext 
     {
       
-        public SpaceshipMongoDBContext(DbContextOptions options) { 
+        public SpaceshipMongoDBContext() { 
         }
 
-        public DbSet<Mission> Missions { get; set; }
+
 
        
 

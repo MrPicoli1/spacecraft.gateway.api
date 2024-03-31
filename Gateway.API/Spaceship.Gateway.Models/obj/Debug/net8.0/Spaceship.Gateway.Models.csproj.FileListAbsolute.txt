@@ -10,9 +10,9 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.AssemblyInfo.cs
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.csproj.CoreCompileInputs.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.sourcelink.json
-C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.csproj.CopyComplete
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\refint\Spaceship.Gateway.Models.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceship.Gateway.Models.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\ref\Spaceship.Gateway.Models.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.Models\obj\Debug\net8.0\Spaceshi.8279512A.Up2Date

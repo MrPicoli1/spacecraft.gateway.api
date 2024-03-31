@@ -26,15 +26,15 @@ namespace Spaceship.Gateway.Services.Services
 
             var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username);
 
-            if (exists != null)
-            {
-                user.AddNotification(user.Login.Username , "Username ja existe");
-            }
+            //if (exists != null)
+            //{
+            //    user.AddNotification(user.Login.Username , "Username ja existe");
+            //}
 
-            if (user.Notifications.Any())
-            {
-                return user;
-            }
+            //if (user.Notifications.Any())
+            //{
+            //    return user;
+            //}
 
             _users.Add(user);
 
@@ -63,15 +63,15 @@ namespace Spaceship.Gateway.Services.Services
 
             var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username);
 
-            if (exists == null)
-            {
-                user.AddNotification(user.Login.Username, "Username nao existe");
-            }
+            //if (exists == null)
+            //{
+            //    user.AddNotification(user.Login.Username, "Username nao existe");
+            //}
 
-            if (user.Notifications.Any())
-            {
-                return user;
-            }
+            //if (user.Notifications.Any())
+            //{
+            //    return user;
+            //}
 
             _users.FirstOrDefault(x => x.Id == user.Id).UpdateInfo(user);
 
@@ -84,15 +84,15 @@ namespace Spaceship.Gateway.Services.Services
 
             var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Id == user.Id);
 
-            if (exists == null)
-            {
-                user.AddNotification(user.Login.Username, "Username nao existe");
-            }
+            //if (exists == null)
+            //{
+            //    user.AddNotification(user.Login.Username, "Username nao existe");
+            //}
 
-            if (user.Notifications.Any())
-            {
-                return user;
-            }
+            //if (user.Notifications.Any())
+            //{
+            //    return user;
+            //}
 
             _users.FirstOrDefault(x => x.Id == user.Id).UpdateLogin(user.Login);
 

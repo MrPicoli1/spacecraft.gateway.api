@@ -2,7 +2,8 @@
 
 namespace Spaceship.Gateway.Shared.ValueObject
 {
-    public class ValueObject : Notifiable<Notification>
+    public abstract class ValueObject
     {
+        
     }
 }

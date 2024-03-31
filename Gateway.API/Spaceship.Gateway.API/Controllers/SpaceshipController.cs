@@ -33,10 +33,10 @@ namespace Spaceship.Gateway.API.Controllers
         {
             var spaceship = await _spaceshipService.PostSpaceAsync(model);
 
-            if(spaceship.Notifications.Any())
-            {
-                return BadRequest(spaceship.Notifications);
-            }
+            //if(spaceship.Notifications.Any())
+            //{
+            //    return BadRequest(spaceship.Notifications);
+            //}
 
             return Ok(spaceship);
         }
@@ -73,8 +73,8 @@ namespace Spaceship.Gateway.API.Controllers
         {
             var spaceship = await _spaceshipService.RankUp(id);
 
-            if(spaceship.Notifications.Any())
-                return BadRequest(spaceship.Notifications);
+            //if(spaceship.Notifications.Any())
+            //    return BadRequest(spaceship.Notifications);
 
             return Ok(spaceship);
         }
@@ -91,26 +91,11 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> Repair([FromRoute] Guid id,[FromRoute] int currency)
         {
             var spaceship = await _spaceshipService.Repair(id, currency);
-            if(spaceship.Notifications.Any())
-                return BadRequest(spaceship.Notifications);
+            //if(spaceship.Notifications.Any())
+            //    return BadRequest(spaceship.Notifications);
             return Ok(spaceship);
         }
 
-
-        /// <summary>
-        /// Send on a Mission
-        /// </summary>
-        /// <param name="id">Id of the desired spaceship</param>
-        /// <param name="model">Object representing a Mission</param>
-        /// <returns>IActionResult</returns>
-        /// <response code="204">If the the spaceShip is sent on a mission</response>
-        [HttpPut("send-on-mission/{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> SendOnMission([FromRoute] Guid id, [FromBody] MissionModel model)
-        {
-
-            return NoContent();
-        }
 
 
         /// <summary>

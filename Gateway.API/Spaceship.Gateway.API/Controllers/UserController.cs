@@ -48,10 +48,10 @@ namespace Spaceship.Gateway.API.Controllers
 
             var user = await _userService.AddUserAsync(model);
 
-            if (user.Notifications.Any())
-            {
-                return BadRequest(user.Notifications);
-            }
+            //if (user.Notifications.Any())
+            //{
+            //    return BadRequest(user.Notifications);
+            //}
 
             return Ok();
         }
@@ -69,10 +69,10 @@ namespace Spaceship.Gateway.API.Controllers
 
             var user = await _userService.UpdateInfoUserAsync(model);
 
-            if (user.Notifications.Any())
-            {
-                return BadRequest(user.Notifications);
-            }
+            //if (user.Notifications.Any())
+            //{
+            //    return BadRequest(user.Notifications);
+            //}
 
             return NoContent();
         }
@@ -90,10 +90,10 @@ namespace Spaceship.Gateway.API.Controllers
             //finalizar o servico
             var user = await _userService.UpdateLoginUserAsync(model);
 
-            if (user.Notifications.Any())
-            {
-                return BadRequest(user.Notifications);
-            }
+            //if (user.Notifications.Any())
+            //{
+            //    return BadRequest(user.Notifications);
+            //}
 
             return NoContent();
         }

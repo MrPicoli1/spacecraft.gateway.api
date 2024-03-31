@@ -1,5 +1,8 @@
-﻿using Spaceship.Gateway.Domain.ValueObjects;
+﻿using Microsoft.EntityFrameworkCore;
+using Spaceship.Gateway.Domain.ValueObjects;
 using Spaceship.Gateway.Shared.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.CompilerServices;
 
 namespace Spaceship.Gateway.Domain.Entities
 {
@@ -18,15 +21,15 @@ namespace Spaceship.Gateway.Domain.Entities
             BaseRankUpMaterial = baseRankUpMaterial;
         }
 
+        private Spaceships() { }
         public Status Status { get; private set; }
         public Material BaseRankUpMaterial { get; private set; }
         public bool Idle { get; private set; }
         public DateTime? MissionEnd { get; private set; }
-
+        [ForeignKey("User")]
         public Guid UserId { get; private set; }
-
         public User User { get; private set; }
-
+        [NotMapped]
         public List<Mission>? Missions { get; set; }
 
         public void Repair (int porcentage)
@@ -42,12 +45,12 @@ namespace Spaceship.Gateway.Domain.Entities
 
         public void RankUp()
         {
-            if (Status.Rank == 5)
-                AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
-            else
-            {
-                Status.RankUp();
-            }
+            //if (Status.Rank == 5)
+            //    AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
+            //else
+            //{
+            //    Status.RankUp();
+            //}
         }
 
         public void SendOnMission(Mission mission)
