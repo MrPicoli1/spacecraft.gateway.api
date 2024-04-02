@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Entities;
 using Spaceship.Gateway.Extensions.Http;
 using Spaceship.Gateway.Models.Spaceship;
@@ -8,44 +10,43 @@ namespace Spaceship.Gateway.Services.Services
 {
     public class SpaceshipService : ISpaceshipService
     {
-        private List<Spaceships> _spaceships;
         private readonly IMapper _mapper;
         private readonly HttpClientExtensions _httpClient;
+        private readonly SpaceshipMySQLContext _mySQLContext;
 
-        public SpaceshipService(IMapper mapper, HttpClientExtensions httpClient)
+        public SpaceshipService(IMapper mapper, HttpClientExtensions httpClient, SpaceshipMySQLContext mySQLContext)
         {
             _mapper = mapper;
             _httpClient = httpClient;
+            _mySQLContext = mySQLContext;
         }
 
         public async Task<bool> DeleteSpaceshipAsync(Guid spaceshipId)
         {
-            var exists = _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
+            var spaceship = await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
 
-            if (exists != null)
+            if (spaceship != null)
             {
                 return false;
             }
-
-
-            _spaceships.FirstOrDefault(x => x.Id == spaceshipId).Delete();
-
-
+            spaceship.Delete();
+            _mySQLContext.Spaceships.Update(spaceship);
+            await _mySQLContext.SaveChangesAsync();
             return true;
         }
 
         public async Task<List<Spaceships>> GetAllSpaceshipsAsync(Guid userId)
         {
-           return _spaceships.FindAll(x => x.UserId == userId);
+            return await _mySQLContext.Spaceships.Where(x => x.UserId.Equals(userId)).ToListAsync();
         }
 
         public async Task<List<SpaceshipModel>> GetNewSpaceshipsAsync()
         {
             var url = "https://localhost:7414/";
-            var responseMessage = await _httpClient.GetList<SpaceshipModel>(url);
-            if (responseMessage != null)
+            var spaceshipList = await _httpClient.GetList<SpaceshipModel>(url);
+            if (spaceshipList != null)
             {
-                return responseMessage;
+                return spaceshipList;
             }
 
             return null;
@@ -55,12 +56,13 @@ namespace Spaceship.Gateway.Services.Services
         {
             var spaceship = _mapper.Map<Spaceships>(model);
 
-            //if (spaceship.Notifications.Any())
-            //{
-            //    return spaceship;
-            //}
+            if (spaceship.Notifications.Any())
+            {
+                return spaceship;
+            }
 
-            _spaceships.Add(spaceship);
+            await _mySQLContext.Spaceships.AddAsync(spaceship);
+            await _mySQLContext.SaveChangesAsync();
 
             return spaceship;
 
@@ -68,16 +70,55 @@ namespace Spaceship.Gateway.Services.Services
 
         public async Task<Spaceships> RankUp(Guid spaceshipId)
         {
-           _spaceships.FirstOrDefault(x=>x.Id == spaceshipId)?.RankUp();
-            return _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
+            var spaceship = await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
+            var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == spaceship!.UserId);
+
+            if (spaceship == null)
+            {
+                return null;
+            }
+
+            spaceship.RankUp();
+            if (spaceship.Notifications.Any())
+            {
+                return spaceship;
+            }
+
+            _mySQLContext.Spaceships.Update(spaceship);
+            await _mySQLContext.SaveChangesAsync();
+
+            return spaceship;
         }
 
-        public async Task<Spaceships> Repair(Guid spaceshipId, int currency)
+        public async Task<Spaceships> Repair(Guid spaceshipId)
         {
-            var spaceship = _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
-            int porcentage = currency / spaceship!.Status.RepairCost;
-            _spaceships.FirstOrDefault(x => x.Id == spaceshipId)?.Repair(porcentage);
-            return _spaceships.FirstOrDefault(x => x.Id == spaceshipId);
+            var spaceship = await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
+            var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == spaceship!.UserId);
+
+            int porcentage = user.RepairSpaceship(spaceship!.Status.RepairCost) / spaceship!.Status.RepairCost;
+            spaceship.Repair(porcentage);
+
+            if (spaceship == null||user==null)
+            {
+                return null;
+            }
+
+            if (user.Notifications.Any())
+            {
+               spaceship.AddNotification("User",user.Notifications.FirstOrDefault());
+            }
+
+            if(spaceship.Notifications.Any())
+            {
+                return spaceship;
+            }
+
+            _mySQLContext.Spaceships.Update(spaceship);
+            await _mySQLContext.SaveChangesAsync();
+
+            _mySQLContext.Users.Update(user);
+            await _mySQLContext.SaveChangesAsync();
+            return spaceship;
         }
 
     }

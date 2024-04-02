@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Entities;
 using Spaceship.Gateway.Models.User;
 using Spaceship.Gateway.Services.Interfaces;
@@ -8,15 +10,15 @@ namespace Spaceship.Gateway.Services.Services
     public class UserService : IUserService
     {
         private readonly IMapper _mapper;
+        private readonly SpaceshipMySQLContext _mySQLContext;
 
-        private List<User> _users;
-
-        public UserService(IMapper mapper)
+        public UserService(IMapper mapper, SpaceshipMySQLContext mySQLContext = null)
         {
             _mapper = mapper;
+            _mySQLContext = mySQLContext;
         }
 
-      
+
 
         public async Task<User> AddUserAsync(UserModel model)
         {
@@ -24,79 +26,79 @@ namespace Spaceship.Gateway.Services.Services
 
             var user = _mapper.Map<User>(model);
 
-            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username);
+            var exists = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Login.Username == user.Login.Username);
 
-            //if (exists != null)
-            //{
-            //    user.AddNotification(user.Login.Username , "Username ja existe");
-            //}
-
-            //if (user.Notifications.Any())
-            //{
-            //    return user;
-            //}
-
-            _users.Add(user);
-
+            if (exists != null)
+            {
+                user.AddNotification(user.Login.Username.ToString(), "Username ja existe");
+                return user;
+            }
+            try
+            {
+                await _mySQLContext.Users.AddAsync(user);
+                await _mySQLContext.SaveChangesAsync();
+            }
+            catch
+            {
+                user.AddNotification("AddUserAsync", "Error when creating the user");
+            }
             return user;
         }
 
         public async Task<bool> DeleteUserAsync(Guid Id)
         {
-            var exists = _users.FirstOrDefault(x => x.Id == Id);
+            var user = _mySQLContext.Users.FirstOrDefault(x => x.Id == Id);
 
-            if (exists != null)
+            if (user != null)
             {
                 return false;
             }
 
+            user.Delete();
 
-            _users.FirstOrDefault(x => x.Id == Id).Delete();
-
+            _mySQLContext.Users.Update(user);
+            await _mySQLContext.SaveChangesAsync();
 
             return true;
         }
 
         public async Task<User> UpdateInfoUserAsync(UserModel model)
         {
-            var user = _mapper.Map<User>(model);
+            var updateInfo = _mapper.Map<User>(model);
 
-            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Login.Username == user.Login.Username);
+            var user = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Login.Username == updateInfo.Login.Username);
 
-            //if (exists == null)
-            //{
-            //    user.AddNotification(user.Login.Username, "Username nao existe");
-            //}
+            if (user == null)
+            {
+                updateInfo.AddNotification(updateInfo.Login.Username.ToString(), "Username nao existe");
+                return updateInfo;
+            }
 
-            //if (user.Notifications.Any())
-            //{
-            //    return user;
-            //}
+            user.UpdateInfo(updateInfo);
 
-            _users.FirstOrDefault(x => x.Id == user.Id).UpdateInfo(user);
+            _mySQLContext.Update(user);
+            await _mySQLContext.SaveChangesAsync();
 
             return user;
         }
 
         public async Task<User> UpdateLoginUserAsync(UserModel model)
         {
-            var user = _mapper.Map<User>(model);
+            var updateLogin = _mapper.Map<User>(model);
 
-            var exists = _users.Where(x => x.Deleted == false).FirstOrDefault(x => x.Id == user.Id);
+            var user =await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Id == updateLogin.Id);
 
-            //if (exists == null)
-            //{
-            //    user.AddNotification(user.Login.Username, "Username nao existe");
-            //}
+            if (user == null)
+            {
+                updateLogin.AddNotification(updateLogin.Login.Username.ToString(), "Username nao existe");
+                return updateLogin;
+            }
 
-            //if (user.Notifications.Any())
-            //{
-            //    return user;
-            //}
-
-            _users.FirstOrDefault(x => x.Id == user.Id).UpdateLogin(user.Login);
+            user.UpdateLogin(updateLogin.Login);
+            _mySQLContext.Users.Update(user);
+            await _mySQLContext.SaveChangesAsync();
 
             return user;
-        }  
+        }
     }
 }

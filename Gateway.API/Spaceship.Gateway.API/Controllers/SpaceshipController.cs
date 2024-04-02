@@ -33,10 +33,10 @@ namespace Spaceship.Gateway.API.Controllers
         {
             var spaceship = await _spaceshipService.PostSpaceAsync(model);
 
-            //if(spaceship.Notifications.Any())
-            //{
-            //    return BadRequest(spaceship.Notifications);
-            //}
+            if(spaceship.Notifications.Any())
+            {
+                return BadRequest(spaceship.Notifications);
+            }
 
             return Ok(spaceship);
         }
@@ -73,8 +73,8 @@ namespace Spaceship.Gateway.API.Controllers
         {
             var spaceship = await _spaceshipService.RankUp(id);
 
-            //if(spaceship.Notifications.Any())
-            //    return BadRequest(spaceship.Notifications);
+            if(spaceship.Notifications.Any())
+               return BadRequest(spaceship.Notifications);
 
             return Ok(spaceship);
         }
@@ -83,16 +83,15 @@ namespace Spaceship.Gateway.API.Controllers
         /// Repais the Spaceship
         /// </summary>
         /// <param name="id">Id of the desired spaceship</param>
-        /// <param name="currency">money required to repair the spaceship</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the repair occurred</response>
-        [HttpPut("repair/{id}/{currency}")]
+        [HttpPut("repair/{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> Repair([FromRoute] Guid id,[FromRoute] int currency)
+        public async Task<IActionResult> Repair([FromRoute] Guid id)
         {
-            var spaceship = await _spaceshipService.Repair(id, currency);
-            //if(spaceship.Notifications.Any())
-            //    return BadRequest(spaceship.Notifications);
+            var spaceship = await _spaceshipService.Repair(id);
+            if(spaceship.Notifications.Any())
+                return BadRequest(spaceship.Notifications);
             return Ok(spaceship);
         }
 

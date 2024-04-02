@@ -23,5 +23,12 @@ namespace Spaceship.Gateway.Domain.ValueObjects
             Currency += currency;
         }
 
+        public void RemoveMaterial(int currency, int crystal, int metal)
+        {
+            Crystal -= crystal;
+            Metal -= metal;
+            Currency -= currency;
+        }
+
     }
 }

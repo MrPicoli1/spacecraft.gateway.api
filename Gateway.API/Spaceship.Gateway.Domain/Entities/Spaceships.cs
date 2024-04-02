@@ -9,16 +9,16 @@ namespace Spaceship.Gateway.Domain.Entities
     public class Spaceships : Entity
     {
         public Spaceships(Status status,
-                         bool idle,
                          Guid userId,
                          User user,
                          Material baseRankUpMaterial)
         {
-            Idle = idle;
+            Idle = true;
             UserId = userId;
             User = user;
             Status = status;
             BaseRankUpMaterial = baseRankUpMaterial;
+            IsValid();
         }
 
         private Spaceships() { }
@@ -31,6 +31,9 @@ namespace Spaceship.Gateway.Domain.Entities
         public User User { get; private set; }
         [NotMapped]
         public List<Mission>? Missions { get; set; }
+        [NotMapped]
+        public List<string> Notifications { get; private set; }
+
 
         public void Repair (int porcentage)
         {
@@ -45,12 +48,12 @@ namespace Spaceship.Gateway.Domain.Entities
 
         public void RankUp()
         {
-            //if (Status.Rank == 5)
-            //    AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
-            //else
-            //{
-            //    Status.RankUp();
-            //}
+            if (Status.Rank == 5)
+                AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
+            else
+            {
+                Status.RankUp();
+            }
         }
 
         public void SendOnMission(Mission mission)
@@ -65,6 +68,29 @@ namespace Spaceship.Gateway.Domain.Entities
             //Adicionar mais regras apos criacao da missao
             Idle = true; 
             Updated(); 
+        }
+
+        public void AddNotification(string key, string message)
+        {
+            Notifications.Add(key + " - " + message);
+        }
+
+        public void IsValid()
+        {
+            if (Status.Rank < 0)
+                AddNotification(Status.Rank.ToString(), "The Rank can't be less than 0");
+            if (Status.Rank > 5)
+                AddNotification(Status.Rank.ToString(), "The rank cant be bigger than 5");
+            if (Status.CurrentHP < 0)
+                AddNotification(Status.CurrentHP.ToString(), "The Current HP can't be negative");
+            if (Status.CurrentHP > Status.TotalHP)
+                AddNotification(Status.CurrentHP.ToString(), "The Current HP can't be bigger than Total HP");
+            if (BaseRankUpMaterial.Crystal <= 0)
+                AddNotification(BaseRankUpMaterial.Crystal.ToString(), "The Crystal can't be less than 1");
+            if(BaseRankUpMaterial.Metal <= 0)
+                AddNotification(BaseRankUpMaterial.Metal.ToString(), "The Metal can't be less than 1");
+            if(BaseRankUpMaterial.Currency <= 0)
+                AddNotification(BaseRankUpMaterial.Currency.ToString(), "The Currency can't be less than 1");
         }
 
 

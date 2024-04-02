@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Entities;
@@ -13,14 +14,16 @@ namespace Spaceship.Gateway.Services.Services
     {
         private readonly HttpClientExtensions _httpClientExtensions;
         private readonly IMongoCollection<Mission> _missionCollection;
+        private readonly SpaceshipMySQLContext _mySQLContext;
 
 
-        public MissionService(HttpClientExtensions httpClientExtensions, IOptions<SpaceshipMongoDbSettings> settings)
+        public MissionService(HttpClientExtensions httpClientExtensions, IOptions<SpaceshipMongoDbSettings> settings, SpaceshipMySQLContext mySQLContext)
         {
             _httpClientExtensions = httpClientExtensions;
             var mongoClient = new MongoClient(settings.Value.ConnectionString);
             var database = mongoClient.GetDatabase(settings.Value.DatabaseName);
             _missionCollection = database.GetCollection<Mission>(settings.Value.CollectionName);
+            _mySQLContext = mySQLContext;
         }
 
         public async Task<List<MissionModel>> CreateMissionsAsync()
@@ -30,19 +33,34 @@ namespace Spaceship.Gateway.Services.Services
 
         }
 
-        public Task<Spaceships> StartMission(Guid spaceshipId, Mission mission)
+        public async Task<Spaceships> StartMission(Guid spaceshipId, Mission mission)
         {
-            throw new NotImplementedException();
+            var spaceship =await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
+            spaceship.SendOnMission(mission);
+            _mySQLContext.Spaceships.Update(spaceship);
+            await _mySQLContext.SaveChangesAsync();
+            
+
+            //adicionar rabbit
+
+            await _missionCollection.InsertOneAsync(mission);
+
+            return spaceship;
+            
+            
+           
         }
 
-        public Task EndMission(Guid missionId)
+        public async Task EndMission(Guid missionId)
         {
-            throw new NotImplementedException();
+            var mission = await _missionCollection.Find(x => x.Id == missionId).FirstOrDefaultAsync();
+            // fazer a logica de finalizar a missao
         }
+       
 
-        public Task<Mission> GetSpaceshipMissionsAsync(Guid spaceshipId)
+        public async Task<List<Mission>> GetSpaceshipMissionsAsync(Guid spaceshipId)
         {
-            throw new NotImplementedException();
+            return await _missionCollection.Find(x => x.SpaceshipId == spaceshipId).ToListAsync();
         }
 
     }
