@@ -10,17 +10,28 @@ namespace Spaceship.Gateway.Extensions.Http
         {
             HttpClient httpClient = new HttpClient();
             var responseMessage = await httpClient.GetAsync(url);
-            return await responseMessage.Content.ReadFromJsonAsync<List<T>>();
+            var response  = await responseMessage.Content.ReadFromJsonAsync<List<T>>();
+            if (response != null)
+            {
+                return response;
+            }
+            throw new Exception("Could not get list from url");
         }
 
         public async Task<T> Get<T>(string url) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var responseMessage = await httpClient.GetAsync(url);
-            return await responseMessage.Content.ReadFromJsonAsync<T>();
+
+            var response = await responseMessage.Content.ReadFromJsonAsync<T>();
+            if (response != null)
+            {
+                return response;
+            }
+            throw new Exception("Could not get list from url");
         }
 
-        public async Task<T> Post<T>(string url, T obj) where T : class
+        public async Task<T?> Post<T>(string url, T obj) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var json = JsonSerializer.Serialize(obj);

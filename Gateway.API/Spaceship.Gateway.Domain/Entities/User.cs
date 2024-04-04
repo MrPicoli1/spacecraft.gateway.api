@@ -24,7 +24,9 @@ namespace Spaceship.Gateway.Domain.Entities
             IsValid();
         }
 
+#pragma warning disable CS8618 
         private User() { }
+#pragma warning restore CS8618 
 
         public Name Name { get; private set; }
         public Login Login { get; private set; }

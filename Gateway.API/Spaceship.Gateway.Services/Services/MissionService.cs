@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using Spaceship.Gateway.Data.RabbitMq;
 using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Entities;
 using Spaceship.Gateway.Extensions.Http;
@@ -15,15 +16,19 @@ namespace Spaceship.Gateway.Services.Services
         private readonly HttpClientExtensions _httpClientExtensions;
         private readonly IMongoCollection<Mission> _missionCollection;
         private readonly SpaceshipMySQLContext _mySQLContext;
+        private readonly IMessageProducer _messageProducer;
 
-
-        public MissionService(HttpClientExtensions httpClientExtensions, IOptions<SpaceshipMongoDbSettings> settings, SpaceshipMySQLContext mySQLContext)
+        public MissionService(HttpClientExtensions httpClientExtensions,
+            IOptions<SpaceshipMongoDbSettings> settings,
+            SpaceshipMySQLContext mySQLContext,
+            IMessageProducer messageProducer)
         {
             _httpClientExtensions = httpClientExtensions;
             var mongoClient = new MongoClient(settings.Value.ConnectionString);
             var database = mongoClient.GetDatabase(settings.Value.DatabaseName);
             _missionCollection = database.GetCollection<Mission>(settings.Value.CollectionName);
             _mySQLContext = mySQLContext;
+            _messageProducer = messageProducer;
         }
 
         public async Task<List<MissionModel>> CreateMissionsAsync()
@@ -39,9 +44,7 @@ namespace Spaceship.Gateway.Services.Services
             spaceship.SendOnMission(mission);
             _mySQLContext.Spaceships.Update(spaceship);
             await _mySQLContext.SaveChangesAsync();
-            
-
-            //adicionar rabbit
+            _messageProducer.SendMessage(mission);  
 
             await _missionCollection.InsertOneAsync(mission);
 

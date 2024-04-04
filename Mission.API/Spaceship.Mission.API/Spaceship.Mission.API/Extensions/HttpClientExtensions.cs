@@ -5,7 +5,7 @@ namespace Spaceship.Mission.API.Extensions
 {
     public class HttpClientExtensions
     {
-        public async Task<T> Post<T>(string url, T obj) where T : class
+        public async Task<T?> Post<T>(string url, T obj) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var json = JsonSerializer.Serialize(obj);

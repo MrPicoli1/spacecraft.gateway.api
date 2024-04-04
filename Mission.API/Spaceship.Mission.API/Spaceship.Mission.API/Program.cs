@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<HttpClientExtensions>();
 builder.Services.AddTransient<IMissionService, MissionService>();
+
 var app = builder.Build();
 
 app.MapGet("/", (IMissionService service) =>

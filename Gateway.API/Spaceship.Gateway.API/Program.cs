@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Spaceship.Gateway.Data.RabbitMq;
 using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Profiles;
 using Spaceship.Gateway.Extensions.Http;
@@ -35,11 +36,9 @@ builder.Services.AddDbContext<SpaceshipMySQLContext>(opts =>
 {
     opts.UseMySql(connectionStringSQL,ServerVersion.AutoDetect(connectionStringSQL));
 });
-
+builder.Services.AddSingleton<IMessageProducer,MQPRoducer>();
 builder.Services.Configure<SpaceshipMongoDbSettings>(
     builder.Configuration.GetSection("MissionMongoDatabase"));
-
-//builder.Services
 
 var app = builder.Build();
 

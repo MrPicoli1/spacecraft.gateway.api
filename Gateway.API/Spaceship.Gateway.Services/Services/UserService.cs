@@ -12,7 +12,7 @@ namespace Spaceship.Gateway.Services.Services
         private readonly IMapper _mapper;
         private readonly SpaceshipMySQLContext _mySQLContext;
 
-        public UserService(IMapper mapper, SpaceshipMySQLContext mySQLContext = null)
+        public UserService(IMapper mapper, SpaceshipMySQLContext mySQLContext)
         {
             _mapper = mapper;
             _mySQLContext = mySQLContext;
