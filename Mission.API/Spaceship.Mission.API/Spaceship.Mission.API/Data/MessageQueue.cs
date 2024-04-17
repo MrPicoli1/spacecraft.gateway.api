@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 
 namespace Spaceship.Mission.API.Data
 {
-    public class RabbitMQ : IRabbitMQ
+    public class MessageQueue : IRabbitMQ
     {
         public string Consume<T>() where T : class
         {

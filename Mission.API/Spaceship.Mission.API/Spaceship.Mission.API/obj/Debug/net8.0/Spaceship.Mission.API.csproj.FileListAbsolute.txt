@@ -24,3 +24,6 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Miss
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Mission.API\Spaceship.Mission.API\obj\Debug\net8.0\Spaceship.Mission.API.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Mission.API\Spaceship.Mission.API\obj\Debug\net8.0\Spaceship.Mission.API.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Mission.API\Spaceship.Mission.API\obj\Debug\net8.0\ref\Spaceship.Mission.API.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Mission.API\Spaceship.Mission.API\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Mission.API\Spaceship.Mission.API\obj\Debug\net8.0\Spaceship.Mission.API.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Mission.API\Spaceship.Mission.API\Spaceship.Mission.API\obj\Debug\net8.0\Spaceshi.F3E20A84.Up2Date

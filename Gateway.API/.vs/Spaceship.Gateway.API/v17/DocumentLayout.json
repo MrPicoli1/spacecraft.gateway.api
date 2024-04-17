@@ -126,8 +126,7 @@
               "RelativeToolTip": "Spaceship.Gateway.Data\\RabbitMq\\IMessageProducer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:35:51.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T17:35:51.659Z"
             },
             {
               "$type": "Document",
@@ -187,8 +186,7 @@
               "RelativeToolTip": "Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAowCEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:56:07.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T17:56:07.626Z"
             },
             {
               "$type": "Document",
@@ -198,7 +196,7 @@
               "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
               "RelativeToolTip": "Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBkAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T17:36:59.361Z",
               "EditorCaption": ""
