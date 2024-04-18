@@ -1,8 +1,8 @@
 ﻿using Spaceship.Gateway.Domain.ValueObjects;
+using Spaceship.Gateway.Models.User;
 using Spaceship.Gateway.Shared.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.Contracts;
-using System.Numerics;
+
 
 namespace Spaceship.Gateway.Domain.Entities
 {
@@ -19,8 +19,6 @@ namespace Spaceship.Gateway.Domain.Entities
             Address = address;
             Material = material;
             Name = name;  
-            
-            Notifications = new List<string>();
             IsValid();
         }
 
@@ -37,18 +35,20 @@ namespace Spaceship.Gateway.Domain.Entities
 
         public List<Spaceships>? Spaceships { get; set; }
         [NotMapped]
-        public List<string> Notifications { get; private set; }
+        public List<string> Notifications { get; private set; } = new List<string>();
 
 
-        public void UpdateInfo(User user)
+        public void UpdateInfo(Name name , Address address)
         {
-            Name = user.Name;
-            Address = user.Address;
+            Name = name;
+            Address = address;
+            IsValid();
             Updated();
         }
         public void UpdateLogin(Login login)
         {
             Login = login;
+            IsValid();
             Updated();
         }
         public void AddMaterial(Material material)

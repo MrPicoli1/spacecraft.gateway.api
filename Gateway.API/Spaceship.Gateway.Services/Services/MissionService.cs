@@ -34,7 +34,7 @@ namespace Spaceship.Gateway.Services.Services
         public async Task<List<MissionModel>> CreateMissionsAsync()
         {
             var url = "https://localhost:7414/";
-            return await _httpClientExtensions.GetList<MissionModel>(url);
+            return (List<MissionModel>)await _httpClientExtensions.GetList<MissionModel>(url);
 
         }
 

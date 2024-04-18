@@ -53,7 +53,7 @@ namespace Spaceship.Gateway.API.Controllers
         {
 
             var spaceshipList = await _spaceshipService.GetNewSpaceshipsAsync();
-            if(spaceshipList.Count == 0)
+            if(spaceshipList.Count < 3)
             {
                 return BadRequest();
             }

@@ -14,12 +14,10 @@ namespace Spaceship.Gateway.Data.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Spaceships>().HasOne(c => c.User).WithMany(e => e.Spaceships).HasForeignKey(f => f.UserId).HasPrincipalKey(g => g.Id);
 
             modelBuilder.Entity<Spaceships>().HasKey(c => c.Id);
             modelBuilder.Entity<Spaceships>().OwnsOne(c => c.Status);
             modelBuilder.Entity<Spaceships>().OwnsOne(c => c.BaseRankUpMaterial);
-
             modelBuilder.Entity<User>().HasKey(c => c.Id);
             modelBuilder.Entity<User>().OwnsOne(c => c.Login);
             modelBuilder.Entity<User>().OwnsOne(c => c.Email);

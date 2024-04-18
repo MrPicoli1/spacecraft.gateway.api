@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Spaceship.Gateway.Data.Repositories;
 using Spaceship.Gateway.Domain.Entities;
+using Spaceship.Gateway.Domain.ValueObjects;
 using Spaceship.Gateway.Models.User;
 using Spaceship.Gateway.Services.Interfaces;
 
@@ -35,12 +36,17 @@ namespace Spaceship.Gateway.Services.Services
             }
             try
             {
+
+                if (user.Notifications.Any())
+                {
+                    return user;
+                }
                 await _mySQLContext.Users.AddAsync(user);
                 await _mySQLContext.SaveChangesAsync();
             }
-            catch
+            catch(Exception e)
             {
-                user.AddNotification("AddUserAsync", "Error when creating the user");
+                user.AddNotification("AddUserAsync", $"Error when creating the user {e}");
             }
             return user;
         }
@@ -49,7 +55,7 @@ namespace Spaceship.Gateway.Services.Services
         {
             var user = _mySQLContext.Users.FirstOrDefault(x => x.Id == Id);
 
-            if (user != null)
+            if (user == null)
             {
                 return false;
             }
@@ -62,19 +68,27 @@ namespace Spaceship.Gateway.Services.Services
             return true;
         }
 
-        public async Task<User> UpdateInfoUserAsync(UserModel model)
+        public async Task<User> UpdateInfoUserAsync(UpdateInfoModel model)
         {
-            var updateInfo = _mapper.Map<User>(model);
+            
 
-            var user = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Login.Username == updateInfo.Login.Username);
+            var user = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Id ==model.Id);
+
 
             if (user == null)
             {
-                updateInfo.AddNotification(updateInfo.Login.Username.ToString(), "Username nao existe");
-                return updateInfo;
+                return null;
             }
 
-            user.UpdateInfo(updateInfo);
+            var name = _mapper.Map<Name>(model.Name);
+            var address = _mapper.Map<Address>(model.Address);
+
+            user.UpdateInfo(name, address);
+
+            if (user.Notifications.Any())
+            {
+                return user;
+            }
 
             _mySQLContext.Update(user);
             await _mySQLContext.SaveChangesAsync();
@@ -82,19 +96,35 @@ namespace Spaceship.Gateway.Services.Services
             return user;
         }
 
-        public async Task<User> UpdateLoginUserAsync(UserModel model)
+        public async Task<User> UpdateLoginUserAsync(UpdateLoginModel model)
         {
-            var updateLogin = _mapper.Map<User>(model);
+            
 
-            var user =await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Id == updateLogin.Id);
+            var exists = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Login.Username == model.Login.Username);
+
+            if (exists != null)
+            {
+                exists.AddNotification(model.Login.Username.ToString(), "Username already exists");
+                return exists;
+            }
+
+            var user =await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Id == model.Id);
+
 
             if (user == null)
             {
-                updateLogin.AddNotification(updateLogin.Login.Username.ToString(), "Username nao existe");
-                return updateLogin;
+                return null;
             }
 
-            user.UpdateLogin(updateLogin.Login);
+            var login = _mapper.Map<Login>(model.Login);
+
+            user.UpdateLogin(login);
+
+            if (user.Notifications.Any())
+            {
+                return user;
+            }
+
             _mySQLContext.Users.Update(user);
             await _mySQLContext.SaveChangesAsync();
 

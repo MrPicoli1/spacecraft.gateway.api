@@ -6,8 +6,8 @@ namespace Spaceship.Gateway.Services.Interfaces
     public interface IUserService
     {
         Task<User> AddUserAsync(UserModel model);
-        Task<User> UpdateInfoUserAsync(UserModel model);
-        Task<User> UpdateLoginUserAsync(UserModel model);
+        Task<User> UpdateInfoUserAsync(UpdateInfoModel model);
+        Task<User> UpdateLoginUserAsync(UpdateLoginModel model);
         Task<bool> DeleteUserAsync(Guid Id);
 
 

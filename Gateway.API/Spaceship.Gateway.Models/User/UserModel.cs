@@ -5,17 +5,15 @@ namespace Spaceship.Gateway.Models.User
 {
     public class UserModel
     {
-        public UserModel(LoginModel login, EmailModel email, AddressModel address, MaterialModel material)
+        public UserModel()
         {
-            Login = login;
-            Email = email;
-            Address = address;
-            Material = material;
+            Material = new MaterialModel(0,0,0);
         }
 
-        public LoginModel Login { get; set; }
-        public EmailModel Email { get; set; }
-        public AddressModel Address { get; set; }
-        public MaterialModel Material { get; set; }
+        public LoginModel? Login { get; set; }
+        public EmailModel? Email { get; set; }
+        public AddressModel? Address { get; set; }
+        public MaterialModel? Material { get; private set; }
+        public NameModel? Name { get; set; }
     }
 }

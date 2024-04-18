@@ -8,14 +8,12 @@ namespace Spaceship.Gateway.Domain.Entities
         public Mission(Material maxMaterial,
             Material minMaterial,
             Difficulty difficulty, 
-            Guid spaceshipId,
-            Spaceships spaceship)
+            Guid spaceshipId)
         {
             MaxMaterial = maxMaterial;
             MinMaterial = minMaterial;
             Difficulty = difficulty;
             SpaceshipId = spaceshipId;
-            Spaceship = spaceship;
         }
 
         public Material MaxMaterial { get; private set; }
@@ -24,7 +22,6 @@ namespace Spaceship.Gateway.Domain.Entities
         public DateTime EndMission {  get; private set; }
 
         public Guid SpaceshipId { get; private set; }
-        public Spaceships Spaceship { get; private set; }
         
 
 

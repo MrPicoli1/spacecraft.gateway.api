@@ -22,7 +22,7 @@ namespace Spaceship.Gateway.API.Controllers
         }
 
         /// <summary>
-        /// Add a User
+        /// User Login
         /// </summary>
         /// <param name="model">Object to generate a JWT Key</param>
         /// <returns>IActionResult</returns>
@@ -50,24 +50,29 @@ namespace Spaceship.Gateway.API.Controllers
 
             if (user.Notifications.Any())
             {
-                return BadRequest(user.Notifications);
+                return BadRequest(user?.Notifications);
             }
 
             return Ok();
         }
 
         /// <summary>
-        /// Update a User
+        /// Update a User Info
         /// </summary>
         /// <param name="model">Object for the Update of the Info of a User</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the update occurred</response>
         [HttpPut("info")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> PutInfoUser([FromBody] UserModel model)
+        public async Task<IActionResult> PutInfoUser([FromBody] UpdateInfoModel model)
         {
 
             var user = await _userService.UpdateInfoUserAsync(model);
+
+            if (user == null)
+            {
+                return BadRequest("User not found");
+            }
 
             if (user.Notifications.Any())
             {
@@ -78,17 +83,22 @@ namespace Spaceship.Gateway.API.Controllers
         }
 
         /// <summary>
-        /// Update a User
+        /// Update a User login
         /// </summary>
         /// <param name="model">Object for the Update of the Login of a User</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the update occurred</response>
         [HttpPut("login")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> PutLoginUser([FromBody] UserModel model)
+        public async Task<IActionResult> PutLoginUser([FromBody] UpdateLoginModel model)
         {
-            //finalizar o servico
+
             var user = await _userService.UpdateLoginUserAsync(model);
+
+            if (user == null)
+            {
+                return BadRequest("User not found");
+            }
 
             if (user.Notifications.Any())
             {

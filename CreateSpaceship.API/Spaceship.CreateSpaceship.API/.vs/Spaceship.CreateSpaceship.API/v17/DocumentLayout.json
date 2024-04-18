@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\createspaceship.api\\spaceship.createspaceship.api\\spaceship.createspaceship.api\\domain\\entities\\spaceshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|solutionrelative:spaceship.createspaceship.api\\domain\\entities\\spaceshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\createspaceship.api\\spaceship.createspaceship.api\\spaceship.createspaceship.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|solutionrelative:spaceship.createspaceship.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\createspaceship.api\\spaceship.createspaceship.api\\spaceship.createspaceship.api\\domain\\valeuobjects\\statusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|solutionrelative:spaceship.createspaceship.api\\domain\\valeuobjects\\statusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\createspaceship.api\\spaceship.createspaceship.api\\spaceship.createspaceship.api\\services\\spaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|solutionrelative:spaceship.createspaceship.api\\services\\spaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\createspaceship.api\\spaceship.createspaceship.api\\spaceship.createspaceship.api\\services\\interfaces\\ispaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|solutionrelative:spaceship.createspaceship.api\\services\\interfaces\\ispaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\createspaceship.api\\spaceship.createspaceship.api\\spaceship.createspaceship.api\\domain\\valeuobjects\\materialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862534B9-566C-4585-9B59-7BB9805CEF1C}|Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API.csproj|solutionrelative:spaceship.createspaceship.api\\domain\\valeuobjects\\materialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MaterialModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\MaterialModel.cs",
+              "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\MaterialModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\MaterialModel.cs",
+              "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\MaterialModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:39:21.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\StatusModel.cs",
+              "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\StatusModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\StatusModel.cs",
+              "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Domain\\ValeuObjects\\StatusModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:38:54.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpaceshipModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
+              "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
+              "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:36:40.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpaceshipService.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Services\\SpaceshipService.cs",
+              "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Services\\SpaceshipService.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Services\\SpaceshipService.cs",
+              "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Services\\SpaceshipService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:23:34.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISpaceshipService.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Services\\Interfaces\\ISpaceshipService.cs",
+              "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Services\\Interfaces\\ISpaceshipService.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Services\\Interfaces\\ISpaceshipService.cs",
+              "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Services\\Interfaces\\ISpaceshipService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:23:10.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Program.cs",
+              "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Program.cs",
+              "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T18:38:31.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

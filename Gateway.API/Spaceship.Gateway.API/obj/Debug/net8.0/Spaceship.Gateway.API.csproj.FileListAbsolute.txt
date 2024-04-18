@@ -73,3 +73,4 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gate
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\bin\Debug\net8.0\Spaceship.Gateway.API.xml
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceship.Gateway.API.xml
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\obj\Debug\net8.0\Spaceshi.9EF8C151.Up2Date
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\Gateway.API\Spaceship.Gateway.API\bin\Debug\net8.0\RabbitMQ.Client.dll

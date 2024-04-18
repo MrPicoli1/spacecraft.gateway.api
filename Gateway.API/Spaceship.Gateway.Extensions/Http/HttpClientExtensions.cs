@@ -6,11 +6,11 @@ namespace Spaceship.Gateway.Extensions.Http
 {
     public class HttpClientExtensions
     {
-        public async Task<List<T>> GetList<T>(string url) where T : class
+        public async Task<IEnumerable<T>> GetList<T>(string url) where T : class
         {
             HttpClient httpClient = new HttpClient();
             var responseMessage = await httpClient.GetAsync(url);
-            var response  = await responseMessage.Content.ReadFromJsonAsync<List<T>>();
+            var response  = await responseMessage.Content.ReadFromJsonAsync<IEnumerable<T>>();
             if (response != null)
             {
                 return response;

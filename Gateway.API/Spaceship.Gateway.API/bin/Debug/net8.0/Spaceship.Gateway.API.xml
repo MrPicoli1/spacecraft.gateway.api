@@ -53,12 +53,11 @@
             <returns>IActionResult</returns>
             <response code="204">If the rank up occurred</response>
         </member>
-        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.Repair(System.Guid,System.Int32)">
+        <member name="M:Spaceship.Gateway.API.Controllers.SpaceshipController.Repair(System.Guid)">
             <summary>
             Repais the Spaceship
             </summary>
             <param name="id">Id of the desired spaceship</param>
-            <param name="currency">money required to repair the spaceship</param>
             <returns>IActionResult</returns>
             <response code="204">If the repair occurred</response>
         </member>
@@ -72,7 +71,7 @@
         </member>
         <member name="M:Spaceship.Gateway.API.Controllers.UserController.Login(Spaceship.Gateway.Models.ValueObjects.LoginModel)">
             <summary>
-            Add a User
+            User Login
             </summary>
             <param name="model">Object to generate a JWT Key</param>
             <returns>IActionResult</returns>
@@ -86,17 +85,17 @@
             <returns>IActionResult</returns>
             <response code="200">If the user is created</response>
         </member>
-        <member name="M:Spaceship.Gateway.API.Controllers.UserController.PutInfoUser(Spaceship.Gateway.Models.User.UserModel)">
+        <member name="M:Spaceship.Gateway.API.Controllers.UserController.PutInfoUser(Spaceship.Gateway.Models.User.UpdateInfoModel)">
             <summary>
-            Update a User
+            Update a User Info
             </summary>
             <param name="model">Object for the Update of the Info of a User</param>
             <returns>IActionResult</returns>
             <response code="204">If the update occurred</response>
         </member>
-        <member name="M:Spaceship.Gateway.API.Controllers.UserController.PutLoginUser(Spaceship.Gateway.Models.User.UserModel)">
+        <member name="M:Spaceship.Gateway.API.Controllers.UserController.PutLoginUser(Spaceship.Gateway.Models.User.UpdateLoginModel)">
             <summary>
-            Update a User
+            Update a User login
             </summary>
             <param name="model">Object for the Update of the Login of a User</param>
             <returns>IActionResult</returns>

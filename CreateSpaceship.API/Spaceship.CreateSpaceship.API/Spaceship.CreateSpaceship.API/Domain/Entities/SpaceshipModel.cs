@@ -6,15 +6,14 @@ namespace Spaceship.CreateSpaceship.API.Domain.Entities
     public class SpaceshipModel
     {
         public SpaceshipModel(int rank)
-        {
-            Idle = true;
+        {           
             Status = new StatusModel(rank);
             BaseRankUpMaterial = new MaterialModel(rank);
         }
 
         public StatusModel Status { get; set; }
         public MaterialModel BaseRankUpMaterial { get; set; }
-        public bool Idle { get; private set; }
+        public bool Idle { get; private set; } = true;
         public DateTime? MissionEnd { get; set; }
 
     }

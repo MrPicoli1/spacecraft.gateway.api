@@ -369,6 +369,18 @@
           }
         }
       },
+      "RabbitMQ.Client/6.7.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.7.0.0"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "runtime": {
           "lib/net5.0/SharpCompress.dll": {
@@ -409,6 +421,7 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
+      "System.Threading.Channels/7.0.0": {},
       "ZstdSharp.Port/0.7.3": {
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {
@@ -423,6 +436,7 @@
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "MongoDB.Driver": "2.24.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
+          "RabbitMQ.Client": "6.7.0",
           "Spaceship.Gateway.Domain": "1.0.0"
         },
         "runtime": {
@@ -725,6 +739,13 @@
       "path": "pomelo.entityframeworkcore.mysql/7.0.0",
       "hashPath": "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b8Jn6dCWZjBmge1KX3hbXNtopBPYjFfFAFRQ7BMlgxWonGBAR19JpLr4V5OiEf8TRx7bWhi/SvLsPQVpL+lxng==",
+      "path": "rabbitmq.client/6.7.0",
+      "hashPath": "rabbitmq.client.6.7.0.nupkg.sha512"
+    },
     "SharpCompress/0.30.1": {
       "type": "package",
       "serviceable": true,
@@ -794,6 +815,13 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "System.Threading.Channels/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
+      "path": "system.threading.channels/7.0.0",
+      "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "ZstdSharp.Port/0.7.3": {
       "type": "package",

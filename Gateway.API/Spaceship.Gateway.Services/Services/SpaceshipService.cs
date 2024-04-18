@@ -42,11 +42,11 @@ namespace Spaceship.Gateway.Services.Services
 
         public async Task<List<SpaceshipModel>> GetNewSpaceshipsAsync()
         {
-            var url = "https://localhost:7414/";
+            var url = "https://localhost:7108/";
             var spaceshipList = await _httpClient.GetList<SpaceshipModel>(url);
             if (spaceshipList != null)
             {
-                return spaceshipList;
+                return (List<SpaceshipModel>)spaceshipList;
             }
 
             return null;
@@ -54,6 +54,13 @@ namespace Spaceship.Gateway.Services.Services
 
         public async Task<Spaceships> PostSpaceAsync(SpaceshipModel model)
         {
+            var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == model.UserId);
+            
+            if(user == null)
+            {
+                return null;
+            }
+
             var spaceship = _mapper.Map<Spaceships>(model);
 
             if (spaceship.Notifications.Any())

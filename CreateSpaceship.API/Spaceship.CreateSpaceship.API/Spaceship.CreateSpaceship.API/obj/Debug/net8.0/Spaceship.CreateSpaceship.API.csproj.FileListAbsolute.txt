@@ -21,9 +21,9 @@ C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaces
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Spaceship.CreateSpaceship.API.props
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\scopedcss\bundle\Spaceship.CreateSpaceship.API.styles.css
-C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\Spaceship.CreateSpaceship.API.csproj.CopyComplete
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\Spaceship.CreateSpaceship.API.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\refint\Spaceship.CreateSpaceship.API.dll
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\Spaceship.CreateSpaceship.API.pdb
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\Spaceship.CreateSpaceship.API.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\ref\Spaceship.CreateSpaceship.API.dll
+C:\Users\Guilherme\Documents\GitHub\spaceship.project\CreateSpaceship.API\Spaceship.CreateSpaceship.API\Spaceship.CreateSpaceship.API\obj\Debug\net8.0\Spaceshi.DD66E36A.Up2Date

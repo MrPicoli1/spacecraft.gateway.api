@@ -1,25 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Spaceship.Gateway.Domain.ValueObjects;
+﻿using Spaceship.Gateway.Domain.ValueObjects;
 using Spaceship.Gateway.Shared.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.CompilerServices;
 
 namespace Spaceship.Gateway.Domain.Entities
 {
     public class Spaceships : Entity
     {
         public Spaceships(Status status,
-                         Guid userId,
-                         User user,
+                         Guid? userId,
                          Material baseRankUpMaterial)
         {
-            Idle = true;
+           
             UserId = userId;
-            User = user;
             Status = status;
             BaseRankUpMaterial = baseRankUpMaterial;
             IsValid();
-            Notifications = new List<string>();
         }
 
 #pragma warning disable CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere declará-lo como anulável.
@@ -27,15 +22,14 @@ namespace Spaceship.Gateway.Domain.Entities
 #pragma warning restore CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere declará-lo como anulável.
         public Status Status { get; private set; }
         public Material BaseRankUpMaterial { get; private set; }
-        public bool Idle { get; private set; }
+        public bool Idle { get; private set; } = true;
         public DateTime? MissionEnd { get; private set; }
         [ForeignKey("User")]
-        public Guid UserId { get; private set; }
-        public User User { get; private set; }
+        public Guid? UserId { get; private set; }
         [NotMapped]
         public List<Mission>? Missions { get; set; }
         [NotMapped]
-        public List<string> Notifications { get; private set; }
+        public List<string> Notifications { get; private set; } =new List<string>();
 
 
         public void Repair (int porcentage)
