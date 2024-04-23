@@ -43,14 +43,18 @@ namespace Spaceship.Gateway.Domain.Entities
             Updated();
         }
 
-        public void RankUp()
+        public Material RankUp()
         {
             if (Status.Rank == 5)
                 AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
             else
             {
                 Status.RankUp();
+                Updated();
+                return new Material(BaseRankUpMaterial.Crystal*Status.Rank, BaseRankUpMaterial.Metal * Status.Rank, BaseRankUpMaterial.Currency * Status.Rank);
             }
+
+            return null;
         }
 
         public void SendOnMission(Mission mission)

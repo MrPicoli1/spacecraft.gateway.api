@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spaceship.Gateway.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e5b3b6b863918cff0cc791641d3938d41bc4e8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29e1f599835feb301f09e624052db746f9b519c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spaceship.Gateway.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spaceship.Gateway.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

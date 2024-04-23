@@ -55,8 +55,8 @@ namespace Spaceship.Gateway.Services.Services
         public async Task<Spaceships> PostSpaceAsync(SpaceshipModel model)
         {
             var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == model.UserId);
-            
-            if(user == null)
+
+            if (user == null)
             {
                 return null;
             }
@@ -85,13 +85,24 @@ namespace Spaceship.Gateway.Services.Services
                 return null;
             }
 
-            spaceship.RankUp();
+
+            var material = spaceship.RankUp();
+
             if (spaceship.Notifications.Any())
             {
                 return spaceship;
             }
 
+            user.RankUpSpaceship(material);
+
+            if (user.Notifications.Any())
+            {
+                spaceship.AddNotification("User", user.Notifications.FirstOrDefault());
+                return spaceship;
+            }
+
             _mySQLContext.Spaceships.Update(spaceship);
+            _mySQLContext.Users.Update(user);
             await _mySQLContext.SaveChangesAsync();
 
             return spaceship;
@@ -102,20 +113,26 @@ namespace Spaceship.Gateway.Services.Services
             var spaceship = await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
             var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == spaceship!.UserId);
 
-            int porcentage = user.RepairSpaceship(spaceship!.Status.RepairCost) / spaceship!.Status.RepairCost;
-            spaceship.Repair(porcentage);
-
-            if (spaceship == null||user==null)
+            if (spaceship == null || user == null)
             {
                 return null;
             }
 
-            if (user.Notifications.Any())
+            if(spaceship.Status.CurrentHP == spaceship.Status.TotalHP)
             {
-               spaceship.AddNotification("User",user.Notifications.FirstOrDefault());
+                spaceship.AddNotification("Spaceship", "The spaceship is already at full health");
+                return spaceship;
             }
 
-            if(spaceship.Notifications.Any())
+            int porcentage = (user.RepairSpaceship(spaceship!.Status.RepairCost) / spaceship!.Status.RepairCost)*100;
+            spaceship.Repair(porcentage);
+
+            if (user.Notifications.Any())
+            {
+                spaceship.AddNotification("User", user.Notifications.FirstOrDefault());
+            }
+
+            if (spaceship.Notifications.Any())
             {
                 return spaceship;
             }

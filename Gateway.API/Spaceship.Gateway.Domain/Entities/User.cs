@@ -75,7 +75,16 @@ namespace Spaceship.Gateway.Domain.Entities
             Updated();
                 return cost;
         }
-        public void RankUpSpaceship() { }
+        public void RankUpSpaceship(Material material) 
+        {
+            if(Material.Currency < material.Currency || Material.Crystal < material.Crystal || Material.Metal < material.Metal)
+            {
+                AddNotification("Material", "You don't have enough material to rank up the spaceship");
+                return;
+            }
+            Material.RemoveMaterial(material.Currency, material.Crystal, material.Metal);
+            Updated();
+        }
 
         public void AddNotification(string key, string message)
         {

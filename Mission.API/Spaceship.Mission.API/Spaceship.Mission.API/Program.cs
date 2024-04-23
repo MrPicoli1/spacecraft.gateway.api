@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<HttpClientExtensions>();
 builder.Services.AddTransient<IMissionService, MissionService>();
-builder.Services.AddHostedService<BackgroundMissionServise>();
-builder.Services.AddSingleton<IRabbitMQ, MessageQueue>();
+//builder.Services.AddHostedService<BackgroundMissionServise>();
+//builder.Services.AddSingleton<IRabbitMQ, MessageQueue>();
 
 var app = builder.Build();
 

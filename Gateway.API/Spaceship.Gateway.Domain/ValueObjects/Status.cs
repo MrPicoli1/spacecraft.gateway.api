@@ -52,6 +52,7 @@ namespace Spaceship.Gateway.Domain.ValueObjects
         public void RankUp()
         {
             Rank += 1;
+            Damage = Damage * Rank;
         }
 
     }

@@ -10,8 +10,6 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
     //.AddJsonOptions(x =>x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
@@ -25,26 +23,25 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
+var connectionStringSQL = builder.Configuration.GetConnectionString("MySQL");
+
+builder.Services.AddDbContext<SpaceshipMySQLContext>(opts =>
+{
+    opts.UseMySql(connectionStringSQL, ServerVersion.AutoDetect(connectionStringSQL));
+});
+
+builder.Services.Configure<SpaceshipMongoDbSettings>(
+    builder.Configuration.GetSection("MissionMongoDatabase"));
+
+
 builder.Services.AddTransient<IUserService,UserService>();
 builder.Services.AddTransient<ISpaceshipService, SpaceshipService>();
 builder.Services.AddTransient<IMissionService, MissionService>();
 builder.Services.AddAutoMapper(typeof(SpaceshipProfiles));
 builder.Services.AddScoped<HttpClientExtensions>();
-
-var connectionStringSQL = builder.Configuration.GetConnectionString("MySQL");
-
-builder.Services.AddDbContext<SpaceshipMySQLContext>(opts =>
-{
-    opts.UseMySql(connectionStringSQL,ServerVersion.AutoDetect(connectionStringSQL));
-});
-builder.Services.AddSingleton<IMessageProducer,MQPRoducer>();
-builder.Services.Configure<SpaceshipMongoDbSettings>(
-    builder.Configuration.GetSection("MissionMongoDatabase"));
+builder.Services.AddSingleton<IMessageProducer, MQPRoducer>();
 
 var app = builder.Build();
-
-
-// Configure the HTTP request pipeline.
 
 app.UseSwagger();
 app.UseSwaggerUI();
