@@ -26,18 +26,18 @@ namespace Spaceship.Gateway.Services.Services
             _httpClientExtensions = httpClientExtensions;
 
 
-            var mongoClient = new MongoClient("mongodb://localhost:27017");
-            var database = mongoClient.GetDatabase("MissionDB");
-            _missionCollection = database.GetCollection<Mission>("Missions");
+            var mongoClient = new MongoClient(settings.Value.ConnectionString);
+            var database = mongoClient.GetDatabase(settings.Value.DatabaseName);
+            _missionCollection = database.GetCollection<Mission>(settings.Value.CollectionName);
             _mySQLContext = mySQLContext;
             _messageProducer = messageProducer;
 
         }
 
-        public async Task<List<MissionModel>> CreateMissionsAsync()
+        public async Task<IEnumerable<MissionModel>> CreateMissionsAsync()
         {
             var url = "https://localhost:7130/";
-            return (List<MissionModel>)await _httpClientExtensions.GetList<MissionModel>(url);
+            return await _httpClientExtensions.GetList<MissionModel>(url);
 
         }
 

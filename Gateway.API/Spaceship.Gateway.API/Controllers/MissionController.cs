@@ -27,7 +27,7 @@ namespace Spaceship.Gateway.API.Controllers
         public async Task<IActionResult> GetMission()
         {
 
-            return Ok(_missionService.CreateMissionsAsync());
+            return Ok(await _missionService.CreateMissionsAsync());
         }
 
         /// <summary>

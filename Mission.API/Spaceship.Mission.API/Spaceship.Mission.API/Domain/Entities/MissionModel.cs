@@ -17,5 +17,6 @@ namespace Spaceship.Mission.API.Domain.Entities
         public MaterialModel MaxMaterial { get; set; }
         public DifficultyModel Difficulty { get; set; }
         public DateTime EndMission { get; private set; }
+        public Guid? SpaceshipId { get; set; }
     }
 }

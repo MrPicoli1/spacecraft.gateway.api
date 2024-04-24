@@ -15,7 +15,7 @@ namespace Spaceship.Gateway.Shared.Entities
             Deleted = false;
         }
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
+        [BsonElement("_id")]
         public Guid Id { get; private set; }
         [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime CreatedDate { get; private set; }
