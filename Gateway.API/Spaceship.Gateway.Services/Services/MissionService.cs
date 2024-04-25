@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Spaceship.Gateway.Data.RabbitMq;
@@ -17,11 +18,13 @@ namespace Spaceship.Gateway.Services.Services
         private readonly IMongoCollection<Mission> _missionCollection;
         private readonly SpaceshipMySQLContext _mySQLContext;
         private readonly IMessageProducer _messageProducer;
+        private readonly IMapper _mapper;
 
         public MissionService(HttpClientExtensions httpClientExtensions,
             IOptions<SpaceshipMongoDbSettings> settings,
             SpaceshipMySQLContext mySQLContext,
-            IMessageProducer messageProducer)
+            IMessageProducer messageProducer,
+            IMapper mapper)
         {
             _httpClientExtensions = httpClientExtensions;
 
@@ -31,7 +34,7 @@ namespace Spaceship.Gateway.Services.Services
             _missionCollection = database.GetCollection<Mission>(settings.Value.CollectionName);
             _mySQLContext = mySQLContext;
             _messageProducer = messageProducer;
-
+            _mapper = mapper;
         }
 
         public async Task<IEnumerable<MissionModel>> CreateMissionsAsync()
@@ -41,14 +44,20 @@ namespace Spaceship.Gateway.Services.Services
 
         }
 
-        public async Task<Spaceships> StartMission(Guid spaceshipId, Mission mission)
+        public async Task<Spaceships> StartMission(MissionModel model)
         {
-            var spaceship =await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
+
+
+            var mission =_mapper.Map<Mission>(model);
+
+            var spaceship =await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == model.SpaceshipId);
             spaceship.SendOnMission(mission);
+           
+            _messageProducer.SendMessage(mission);
+
+
             _mySQLContext.Spaceships.Update(spaceship);
             await _mySQLContext.SaveChangesAsync();
-            _messageProducer.SendMessage(mission);  
-
             await _missionCollection.InsertOneAsync(mission);
 
             return spaceship;

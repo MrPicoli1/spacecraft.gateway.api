@@ -9,11 +9,11 @@ namespace Spaceship.Mission.API.Services
     {
         private readonly HttpClientExtensions _httpClientExtensions;
         private readonly IRabbitMQ _rabbitMQ;
-        private Timer _timer;
-        public BackgroundMissionServise(HttpClientExtensions httpClientExtensions, Timer timer)
+        private Timer? _timer;
+        public BackgroundMissionServise(HttpClientExtensions httpClientExtensions, IRabbitMQ rabbitMQ)
         {
             _httpClientExtensions = httpClientExtensions;
-            _timer = timer;
+            _rabbitMQ = rabbitMQ;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -33,11 +33,11 @@ namespace Spaceship.Mission.API.Services
 
                     if (mission.EndMission < DateTime.Now)
                     {
-                        _rabbitMQ.Publish<MissionModel>(mission);
+                        _rabbitMQ.Publish(mission);
                         return;
                     }
 
-                    await _httpClientExtensions.Post<MissionModel>("http://localhost:5000/api/missions", mission);
+                   await _httpClientExtensions.Post("http://localhost:5000/api/missions", mission);
                 }catch(Exception e)
                 {
                     Console.WriteLine(e.Message);

@@ -33,15 +33,14 @@ namespace Spaceship.Gateway.API.Controllers
         /// <summary>
         /// Send on a Mission
         /// </summary>
-        /// <param name="id">Id of the desired spaceship</param>
         /// <param name="model">Object representing a Mission</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the the spaceShip is sent on a mission</response>
-        [HttpPut("start-mission/{id}")]
+        [HttpPost("start-mission")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> StartMission([FromRoute] Guid id, [FromBody] MissionModel model)
+        public async Task<IActionResult> StartMission([FromBody] MissionModel model)
         {
-
+            await _missionService.StartMission(model);
             return NoContent();
         }
 

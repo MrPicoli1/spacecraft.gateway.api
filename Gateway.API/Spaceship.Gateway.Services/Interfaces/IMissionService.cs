@@ -6,7 +6,7 @@ namespace Spaceship.Gateway.Services.Interfaces
     public interface IMissionService
     {
         public Task<IEnumerable<MissionModel>> CreateMissionsAsync();
-        Task<Spaceships> StartMission(Guid spaceshipId, Mission mission);
+        Task<Spaceships> StartMission(MissionModel model);
         public Task<List<Mission>> GetSpaceshipMissionsAsync(Guid spaceshipId);
         public Task EndMission(Guid missionId);
     }

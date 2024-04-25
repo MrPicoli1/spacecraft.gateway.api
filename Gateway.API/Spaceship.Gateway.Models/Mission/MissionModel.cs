@@ -18,7 +18,7 @@ namespace Spaceship.Gateway.Models.Mission
         public MaterialModel MaxMaterial { get;  set; }
         public MaterialModel MinMaterial { get;  set; }
         public DifficultyModel Difficulty { get;  set; }
-
+        public DateTime? EndMission { get;  set; }
         public Guid? SpaceshipId { get;  set; }
 
 
