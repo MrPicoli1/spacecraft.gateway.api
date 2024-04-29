@@ -25,13 +25,13 @@ namespace Spaceship.Mission.API.Services
 
         private async void ProcessMisson(object? state)
         {
-            var message = _rabbitMQ.Consume<MissionModel>();
+            var message = _rabbitMQ.Consume();
             if (message != null)
             {
                 try {
                     var mission = JsonSerializer.Deserialize<MissionModel>(message);
 
-                    if (mission.EndMission < DateTime.Now)
+                    if (mission.EndMission >= DateTime.Now)
                     {
                         _rabbitMQ.Publish(mission);
                         return;
@@ -40,7 +40,7 @@ namespace Spaceship.Mission.API.Services
                    await _httpClientExtensions.Post("http://localhost:5000/api/missions", mission);
                 }catch(Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(e.Message+"\n"+e.StackTrace);
                 }
                 }
         }
