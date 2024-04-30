@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\mission.api\\spaceship.mission.api\\spaceship.mission.api\\domain\\entities\\valueobjects\\difficultymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\domain\\entities\\valueobjects\\difficultymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\mission.api\\spaceship.mission.api\\spaceship.mission.api\\domain\\entities\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\domain\\entities\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\mission.api\\spaceship.mission.api\\spaceship.mission.api\\services\\backgroundmissionservise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\services\\backgroundmissionservise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,14 +35,6 @@
       "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\interfaces\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\mission.api\\spaceship.mission.api\\spaceship.mission.api\\domain\\entities\\valueobjects\\difficultymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\domain\\entities\\valueobjects\\difficultymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\mission.api\\spaceship.mission.api\\spaceship.mission.api\\domain\\entities\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\domain\\entities\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\mission.api\\spaceship.mission.api\\spaceship.mission.api\\domain\\entities\\valueobjects\\materialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2A8497-CB5C-4863-B823-24A646246870}|Spaceship.Mission.API\\Spaceship.Mission.API.csproj|solutionrelative:spaceship.mission.api\\domain\\entities\\valueobjects\\materialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BackgroundMissionServise.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Services\\BackgroundMissionServise.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Services\\BackgroundMissionServise.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "HttpClientExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Extensions\\HttpClientExtensions.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Extensions\\HttpClientExtensions.cs",
@@ -75,36 +75,37 @@
               "RelativeToolTip": "Spaceship.Mission.API\\Extensions\\HttpClientExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T15:18:11.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T15:18:11.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "DifficultyModel.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Domain\\Entities\\ValueObjects\\DifficultyModel.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Domain\\Entities\\ValueObjects\\DifficultyModel.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Domain\\Entities\\ValueObjects\\DifficultyModel.cs",
               "RelativeToolTip": "Spaceship.Mission.API\\Domain\\Entities\\ValueObjects\\DifficultyModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBQAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T14:47:32.098Z"
+              "WhenOpened": "2024-03-13T14:47:32.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "MissionModel.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Domain\\Entities\\MissionModel.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Domain\\Entities\\MissionModel.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Domain\\Entities\\MissionModel.cs",
               "RelativeToolTip": "Spaceship.Mission.API\\Domain\\Entities\\MissionModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T14:43:13.615Z"
+              "WhenOpened": "2024-03-13T14:43:13.615Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MessageQueue.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Data\\MessageQueue.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Data\\MessageQueue.cs",
@@ -112,12 +113,11 @@
               "RelativeToolTip": "Spaceship.Mission.API\\Data\\MessageQueue.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAAAcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T19:05:11.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T19:05:11.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Program.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Program.cs",
@@ -125,8 +125,7 @@
               "RelativeToolTip": "Spaceship.Mission.API\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T14:36:19.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T14:36:19.991Z"
             },
             {
               "$type": "Document",
@@ -142,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IRabbitMQ.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Data\\IRabbitMQ.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Data\\IRabbitMQ.cs",
@@ -150,12 +149,11 @@
               "RelativeToolTip": "Spaceship.Mission.API\\Data\\IRabbitMQ.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T19:04:56.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T19:04:56.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IMissionService.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Mission.API\\Spaceship.Mission.API\\Spaceship.Mission.API\\Interfaces\\IMissionService.cs",
               "RelativeDocumentMoniker": "Spaceship.Mission.API\\Interfaces\\IMissionService.cs",

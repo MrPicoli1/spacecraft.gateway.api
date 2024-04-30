@@ -47,13 +47,14 @@ namespace Spaceship.Gateway.API.Controllers
         /// <summary>
         /// Finish a Mission of a Spaceship
         /// </summary>
-        /// <param name="id">Object for the Update of a User</param>
+        /// <param name="id">Id of a mission</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If the update occurred</response>
         [HttpPut()]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> EndMission([FromBody] Guid id)
         {
+            await _missionService.EndMission(id);
             return NoContent();
         }
 

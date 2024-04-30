@@ -66,10 +66,40 @@ namespace Spaceship.Gateway.Services.Services
            
         }
 
-        public async Task EndMission(Guid missionId)
+        public async Task<bool> EndMission(Guid missionId)
         {
             var mission = await _missionCollection.Find(x => x.Id == missionId).FirstOrDefaultAsync();
-            // fazer a logica de finalizar a missao
+
+            if(mission == null)
+            {
+                return false;
+            }
+
+            var spaceship = await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == mission.SpaceshipId);
+            var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == spaceship.UserId);
+
+            var fail = mission.FailChance(spaceship.Status);
+            spaceship.ReturnFromMission();
+            if (fail)
+            {
+                var damage = (spaceship.Status.CurrentHP / 2);
+                spaceship.TakeDamage(damage);
+                _mySQLContext.Spaceships.Update(spaceship);
+                await _mySQLContext.SaveChangesAsync();
+                return true;
+            }
+            
+
+            spaceship.TakeDamage(mission.DamadgeTaken(spaceship.Status));
+            user.AddMaterial(mission.Reward());
+
+            
+
+            _mySQLContext.Spaceships.Update(spaceship);
+            _mySQLContext.Users.Update(user);
+            await _mySQLContext.SaveChangesAsync();
+
+            return true;
         }
        
 

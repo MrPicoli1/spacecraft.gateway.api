@@ -2,7 +2,7 @@
 {
     public class Difficulty
     {
-        public Difficulty(int dificultLevel, int missionRank, decimal baseFailChance)
+        public Difficulty(int dificultLevel, int missionRank, int baseFailChance)
         {
             DificultLevel = dificultLevel;
             MissionRank = missionRank;
@@ -11,6 +11,6 @@
 
         public int DificultLevel { get; private set; }
         public int MissionRank { get; private set; }
-        public decimal BaseFailChance { get; private set; }
+        public int BaseFailChance { get; private set; }
     }
 }

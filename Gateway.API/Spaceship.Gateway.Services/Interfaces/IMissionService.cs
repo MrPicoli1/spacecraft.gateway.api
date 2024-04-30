@@ -8,6 +8,6 @@ namespace Spaceship.Gateway.Services.Interfaces
         public Task<IEnumerable<MissionModel>> CreateMissionsAsync();
         Task<Spaceships> StartMission(MissionModel model);
         public Task<List<Mission>> GetSpaceshipMissionsAsync(Guid spaceshipId);
-        public Task EndMission(Guid missionId);
+        public Task<bool> EndMission(Guid missionId);
     }
 }
