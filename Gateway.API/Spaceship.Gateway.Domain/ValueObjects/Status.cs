@@ -20,10 +20,6 @@ namespace Spaceship.Gateway.Domain.ValueObjects
             {
                 RepairCost = 10 * (Tier) + (Rank * (15 / 100)) + TotalHP / CurrentHP;
             }
-
-            
-            
-
         }
 
         public int TotalHP { get; private set; }

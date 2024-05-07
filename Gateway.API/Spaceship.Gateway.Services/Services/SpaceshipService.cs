@@ -80,7 +80,7 @@ namespace Spaceship.Gateway.Services.Services
             var spaceship = await _mySQLContext.Spaceships.FirstOrDefaultAsync(x => x.Id == spaceshipId);
             var user = await _mySQLContext.Users.FirstOrDefaultAsync(x => x.Id == spaceship!.UserId);
 
-            if (spaceship == null)
+            if (spaceship == null || user ==  null)
             {
                 return null;
             }

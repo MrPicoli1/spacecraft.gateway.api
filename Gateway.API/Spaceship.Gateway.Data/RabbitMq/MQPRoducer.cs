@@ -8,7 +8,10 @@ namespace Spaceship.Gateway.Data.RabbitMq
     {
         public void SendMessage<T>(T message)where T : class
         {
-            var factory = new ConnectionFactory() { HostName = "localhost", Port = 5672, UserName = "guest", Password = "guest" };
+            var factory = new ConnectionFactory() { HostName = "localhost",
+                Port = 5672,
+                UserName = "guest",
+                Password = "guest" };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             channel.QueueDeclare(queue: "missions",

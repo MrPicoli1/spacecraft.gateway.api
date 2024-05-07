@@ -54,8 +54,10 @@ namespace Spaceship.Gateway.API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> EndMission([FromBody] Guid id)
         {
-            await _missionService.EndMission(id);
+            if(await _missionService.EndMission(id))
             return NoContent();
+
+            return NotFound();
         }
 
     }

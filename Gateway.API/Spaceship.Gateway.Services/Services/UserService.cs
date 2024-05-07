@@ -19,15 +19,12 @@ namespace Spaceship.Gateway.Services.Services
             _mySQLContext = mySQLContext;
         }
 
-
-
         public async Task<User> AddUserAsync(UserModel model)
         {
-
-
             var user = _mapper.Map<User>(model);
 
-            var exists = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Login.Username == user.Login.Username);
+            var exists = await _mySQLContext.Users.Where(x => x.Deleted == false)
+                .FirstOrDefaultAsync(x => x.Login.Username == user.Login.Username);
 
             if (exists != null)
             {
@@ -36,7 +33,6 @@ namespace Spaceship.Gateway.Services.Services
             }
             try
             {
-
                 if (user.Notifications.Any())
                 {
                     return user;
@@ -70,7 +66,6 @@ namespace Spaceship.Gateway.Services.Services
 
         public async Task<User> UpdateInfoUserAsync(UpdateInfoModel model)
         {
-            
 
             var user = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Id ==model.Id);
 
@@ -100,7 +95,8 @@ namespace Spaceship.Gateway.Services.Services
         {
             
 
-            var exists = await _mySQLContext.Users.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.Login.Username == model.Login.Username);
+            var exists = await _mySQLContext.Users.Where(x => x.Deleted == false)
+                .FirstOrDefaultAsync(x => x.Login.Username == model.Login.Username);
 
             if (exists != null)
             {

@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
               "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Domain\\Entities\\SpaceshipModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAA2AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T19:36:40.95Z",
               "EditorCaption": ""
@@ -107,8 +107,7 @@
               "RelativeToolTip": "Spaceship.CreateSpaceship.API\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T18:38:31.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T18:38:31.153Z"
             }
           ]
         }

@@ -3,40 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39BDDE85-67A3-4130-89A7-D6544C24B353}|Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.shared\\valueobject\\valueobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39BDDE85-67A3-4130-89A7-D6544C24B353}|Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj|solutionrelative:spaceship.gateway.shared\\valueobject\\valueobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39BDDE85-67A3-4130-89A7-D6544C24B353}|Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.shared\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39BDDE85-67A3-4130-89A7-D6544C24B353}|Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj|solutionrelative:spaceship.gateway.shared\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795C91BF-F7D1-4366-946D-679B940ED5F1}|Spaceship.Gateway.Extensions\\Spaceship.Gateway.Extensions.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.extensions\\http\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795C91BF-F7D1-4366-946D-679B940ED5F1}|Spaceship.Gateway.Extensions\\Spaceship.Gateway.Extensions.csproj|solutionrelative:spaceship.gateway.extensions\\http\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\valueobjects\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\valueobjects\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\services\\spaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\services\\spaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\entities\\spaceships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\entities\\spaceships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\entities\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\entities\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\valueobjects\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\valueobjects\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\interfaces\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\interfaces\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\valueobjects\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\valueobjects\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\valueobjects\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\valueobjects\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\controllers\\missioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\controllers\\missioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\valueobjects\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\valueobjects\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\entities\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\entities\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39BDDE85-67A3-4130-89A7-D6544C24B353}|Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.shared\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39BDDE85-67A3-4130-89A7-D6544C24B353}|Spaceship.Gateway.Shared\\Spaceship.Gateway.Shared.csproj|solutionrelative:spaceship.gateway.shared\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\entities\\spaceships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|solutionrelative:spaceship.gateway.domain\\entities\\spaceships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\repositories\\spaceshipmysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\repositories\\spaceshipmysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5964FD22-5DCA-4323-8C38-D1DB79A512D1}|Spaceship.Gateway.Domain\\Spaceship.Gateway.Domain.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,32 +71,32 @@
       "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{795C91BF-F7D1-4366-946D-679B940ED5F1}|Spaceship.Gateway.Extensions\\Spaceship.Gateway.Extensions.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.extensions\\http\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795C91BF-F7D1-4366-946D-679B940ED5F1}|Spaceship.Gateway.Extensions\\Spaceship.Gateway.Extensions.csproj|solutionrelative:spaceship.gateway.extensions\\http\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\rabbitmq\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\rabbitmq\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\repositories\\spaceshipmongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\repositories\\spaceshipmongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\rabbitmq\\mqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\rabbitmq\\mqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\rabbitmq\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\rabbitmq\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\controllers\\missioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\controllers\\missioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\controllers\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\controllers\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\repositories\\spaceshipmongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\repositories\\spaceshipmongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.data\\repositories\\spaceshipmysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB97CD86-8D2B-4E27-ADB0-8598DDA1ED6B}|Spaceship.Gateway.Data\\Spaceship.Gateway.Data.csproj|solutionrelative:spaceship.gateway.data\\repositories\\spaceshipmysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\services\\spaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\services\\spaceshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9B8C2B-266D-4BA6-A86A-100F19A80684}|Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.models\\mission\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,24 +107,12 @@
       "RelativeMoniker": "D:0:0:{5B9B8C2B-266D-4BA6-A86A-100F19A80684}|Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj|solutionrelative:spaceship.gateway.models\\spaceship\\spaceshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.api\\controllers\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5574B3-B96C-4558-9966-D86CD0253061}|Spaceship.Gateway.API\\Spaceship.Gateway.API.csproj|solutionrelative:spaceship.gateway.api\\controllers\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B9B8C2B-266D-4BA6-A86A-100F19A80684}|Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.models\\user\\updateinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9B8C2B-266D-4BA6-A86A-100F19A80684}|Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj|solutionrelative:spaceship.gateway.models\\user\\updateinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9B8C2B-266D-4BA6-A86A-100F19A80684}|Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.models\\user\\updateloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9B8C2B-266D-4BA6-A86A-100F19A80684}|Spaceship.Gateway.Models\\Spaceship.Gateway.Models.csproj|solutionrelative:spaceship.gateway.models\\user\\updateloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|c:\\users\\guilherme\\documents\\github\\spaceship.project\\gateway.api\\spaceship.gateway.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB6FCEEE-2AF9-49EA-8C8D-37C8254C8D0A}|Spaceship.Gateway.Services\\Spaceship.Gateway.Services.csproj|solutionrelative:spaceship.gateway.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,100 +122,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Difficulty.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:05:25.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Program.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Program.cs",
-              "RelativeToolTip": "Spaceship.Gateway.API\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T20:27:55.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MissionController.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\MissionController.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Controllers\\MissionController.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\MissionController.cs",
-              "RelativeToolTip": "Spaceship.Gateway.API\\Controllers\\MissionController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDgAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T14:13:06.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Entities\\Entity.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Shared\\Entities\\Entity.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Entities\\Entity.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Shared\\Entities\\Entity.cs",
+              "DocumentIndex": 0,
+              "Title": "ValueObject.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\ValueObject\\ValueObject.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Shared\\ValueObject\\ValueObject.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\ValueObject\\ValueObject.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Shared\\ValueObject\\ValueObject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T19:15:22.377Z",
+              "WhenOpened": "2024-05-07T15:25:33.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Spaceship.Gateway.API\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Login.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\ValueObjects\\Login.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Login.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Domain\\ValueObjects\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:49:44.885Z"
+              "WhenOpened": "2024-05-07T15:08:15.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Address.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\ValueObjects\\Address.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Address.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Domain\\ValueObjects\\Address.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T14:26:38.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Mission.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\Mission.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\Entities\\Mission.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\Mission.cs",
               "RelativeToolTip": "Spaceship.Gateway.Domain\\Entities\\Mission.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwCkAAAAjAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAcwCkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T21:06:00.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAiwG0AAAAJAAAA",
+              "DocumentIndex": 10,
+              "Title": "Difficulty.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Domain\\ValueObjects\\Difficulty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:40:40.72Z"
+              "WhenOpened": "2024-04-30T15:05:25.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwBUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T18:11:50.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "IMissionService.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Interfaces\\IMissionService.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Interfaces\\IMissionService.cs",
@@ -216,58 +217,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T18:48:18.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MissionService.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\MissionService.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Services\\MissionService.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\MissionService.cs",
               "RelativeToolTip": "Spaceship.Gateway.Services\\Services\\MissionService.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAUwG8AAAABAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAwwCcAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T19:44:10.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpaceshipService.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAmwI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T19:37:27.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Services\\Services\\UserService.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwGIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T18:39:27.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HttpClientExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T19:40:37.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Entities\\Entity.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Shared\\Entities\\Entity.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Shared\\Entities\\Entity.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Shared\\Entities\\Entity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T19:15:22.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Spaceships.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\Spaceships.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\Entities\\Spaceships.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\Spaceships.cs",
               "RelativeToolTip": "Spaceship.Gateway.Domain\\Entities\\Spaceships.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAYwBYAAAAVAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAwDcAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T19:59:12.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Domain\\ValueObjects\\Status.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAwDAAAAAjAAAA",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T18:11:50.651Z",
+              "WhenOpened": "2024-04-18T18:40:40.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HttpClientExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Extensions\\Http\\HttpClientExtensions.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCgAAAAJAAAA",
+              "DocumentIndex": 16,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Spaceship.Gateway.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T19:40:37.457Z"
+              "WhenOpened": "2024-04-18T18:49:44.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
+              "Title": "SpaceshipMongoDbSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T18:59:15.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MQPRoducer.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T17:39:10.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "IMessageProducer.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\RabbitMq\\IMessageProducer.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\RabbitMq\\IMessageProducer.cs",
@@ -275,11 +368,63 @@
               "RelativeToolTip": "Spaceship.Gateway.Data\\RabbitMq\\IMessageProducer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:53:10.768Z"
+              "WhenOpened": "2024-04-25T17:53:10.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MissionController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\MissionController.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Controllers\\MissionController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\MissionController.cs",
+              "RelativeToolTip": "Spaceship.Gateway.API\\Controllers\\MissionController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T14:13:06.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SpaceshipController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
+              "RelativeToolTip": "Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAIwCEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T19:32:56.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "SpaceshipMySQLContext.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
+              "RelativeToolTip": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T20:16:28.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Program.cs",
+              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Program.cs",
+              "RelativeToolTip": "Spaceship.Gateway.API\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T20:27:55.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\appsettings.json",
               "RelativeDocumentMoniker": "Spaceship.Gateway.API\\appsettings.json",
@@ -291,43 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MQPRoducer.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Data\\RabbitMq\\MQPRoducer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:39:10.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SpaceshipMongoDbSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMongoDbSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T18:59:15.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SpaceshipMySQLContext.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Data\\Repositories\\SpaceshipMySQLContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T20:16:28.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "MissionModel.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Models\\Mission\\MissionModel.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Models\\Mission\\MissionModel.cs",
@@ -339,19 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SpaceshipService.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Services\\Services\\SpaceshipService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T19:37:27.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "SpaceshipModel.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Models\\Spaceship\\SpaceshipModel.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Models\\Spaceship\\SpaceshipModel.cs",
@@ -363,43 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SpaceshipController.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
-              "RelativeToolTip": "Spaceship.Gateway.API\\Controllers\\SpaceshipController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowCEAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T19:32:56.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Services\\UserService.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Services\\Services\\UserService.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAA2wH8AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:39:27.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "Spaceship.Gateway.Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:48:18.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "UpdateLoginModel.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Models\\User\\UpdateLoginModel.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Models\\User\\UpdateLoginModel.cs",
@@ -411,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "UpdateInfoModel.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\spaceship.project\\Gateway.API\\Spaceship.Gateway.Models\\User\\UpdateInfoModel.cs",
               "RelativeDocumentMoniker": "Spaceship.Gateway.Models\\User\\UpdateInfoModel.cs",

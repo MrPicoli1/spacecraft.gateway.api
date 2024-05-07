@@ -71,7 +71,7 @@ namespace Spaceship.Gateway.API.Controllers
 
             if (user == null)
             {
-                return BadRequest("User not found");
+                return NotFound("User not found");
             }
 
             if (user.Notifications.Any())
@@ -97,7 +97,7 @@ namespace Spaceship.Gateway.API.Controllers
 
             if (user == null)
             {
-                return BadRequest("User not found");
+                return NotFound("User not found");
             }
 
             if (user.Notifications.Any())

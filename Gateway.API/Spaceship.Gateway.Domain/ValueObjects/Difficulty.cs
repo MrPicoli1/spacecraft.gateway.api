@@ -1,6 +1,8 @@
-﻿namespace Spaceship.Gateway.Domain.ValueObjects
+﻿using Spaceship.Gateway.Shared.ValueObject;
+
+namespace Spaceship.Gateway.Domain.ValueObjects
 {
-    public class Difficulty
+    public class Difficulty: ValueObject
     {
         public Difficulty(int dificultLevel, int missionRank, int baseFailChance)
         {

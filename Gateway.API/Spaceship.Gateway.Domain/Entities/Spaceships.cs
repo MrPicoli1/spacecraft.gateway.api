@@ -46,12 +46,14 @@ namespace Spaceship.Gateway.Domain.Entities
         public Material RankUp()
         {
             if (Status.Rank == 5)
-                AddNotification(Status.Rank.ToString() ,"O Rank ja esta bo maximo");
+                AddNotification(Status.Rank.ToString() ,"The rank is at max");
             else
             {
                 Status.RankUp();
                 Updated();
-                return new Material(BaseRankUpMaterial.Crystal*Status.Rank, BaseRankUpMaterial.Metal * Status.Rank, BaseRankUpMaterial.Currency * Status.Rank);
+                return new Material(BaseRankUpMaterial.Crystal*Status.Rank,
+                    BaseRankUpMaterial.Metal * Status.Rank,
+                    BaseRankUpMaterial.Currency * Status.Rank);
             }
 
             return null;
@@ -66,7 +68,6 @@ namespace Spaceship.Gateway.Domain.Entities
 
         public void ReturnFromMission() 
         {
-            //Adicionar mais regras apos criacao da missao
             Idle = true; 
             Updated(); 
         }
