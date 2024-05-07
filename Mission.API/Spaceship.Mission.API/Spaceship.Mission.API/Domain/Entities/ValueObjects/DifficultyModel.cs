@@ -20,9 +20,6 @@
                     BaseFailChance = random.Next(30, 60);
                     break;
             }
-
-            
-
           
         }
 

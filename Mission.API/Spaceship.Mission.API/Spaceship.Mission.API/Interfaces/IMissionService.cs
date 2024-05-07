@@ -6,6 +6,5 @@ namespace Spaceship.Mission.API.Interfaces
     {
         public List<MissionModel> CreateMission();
 
-        public Task EndMission();
     }
 }

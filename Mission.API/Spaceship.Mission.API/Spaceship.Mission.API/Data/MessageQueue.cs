@@ -9,9 +9,10 @@ namespace Spaceship.Mission.API.Data
     {
         public string Consume()
         {
-            var factory = new ConnectionFactory() { HostName = "localhost", Port = 5672, UserName = "guest", Password = "guest" };
-
-
+            var factory = new ConnectionFactory() { HostName = "localhost",
+                Port = 5672,
+                UserName = "guest",
+                Password = "guest" };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
@@ -34,7 +35,10 @@ namespace Spaceship.Mission.API.Data
         }
         public void Publish<T>(T message) where T : class
         {
-            var factory = new ConnectionFactory() { HostName = "localhost", Port = 5672, UserName = "guest", Password = "guest" };
+            var factory = new ConnectionFactory() { HostName = "localhost",
+                Port = 5672,
+                UserName = "guest",
+                Password = "guest" };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             channel.QueueDeclare(queue: "missions",

@@ -31,7 +31,7 @@ namespace Spaceship.Mission.API.Services
                 try {
                     var mission = JsonSerializer.Deserialize<MissionModel>(message);
 
-                    if (mission.EndMission >= DateTime.Now)
+                    if (mission.EndMission > DateTime.Now)
                     {
                         _rabbitMQ.Publish(mission);
                         return;

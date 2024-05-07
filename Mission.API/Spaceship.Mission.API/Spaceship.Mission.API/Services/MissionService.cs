@@ -16,10 +16,5 @@ namespace Spaceship.Mission.API.Services
             return missionList;
 
         }
-
-        public Task EndMission()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
