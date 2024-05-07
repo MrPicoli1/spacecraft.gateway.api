@@ -18,4 +18,4 @@ This web game project to apply my knoledge in .Net 8
  * RabbitMQ
  * MySQL
  * MongoDB
- * HTML,CSS,JavaScript (or Blazor)
+ * HTML,CSS,JavaScript (Blazor?)
