@@ -2,6 +2,8 @@
 
 This web game project to apply my knoledge in .Net 8
 
+More info on the wiki: https://github.com/MrPicoli1/spaceship.project/wiki
+
 ## Goals
 
  *  Create a Gateway API
